@@ -2,9 +2,9 @@
      <img src="imgs/proyecto.jpg" alt="Clasificación de la intención en reportes ciudadanos del DMQ" width="900">
    </p>
 
-# Clasificación de la intención en reportes ciudadanos con BERT
+# Clasificación de intención en reportes ciudadanos con BERT (Clasificador de texto)
 
-**Universidad San Francisco de Quito** · Colegio de Posgrados<br>
+**Universidad San Francisco de Quito** · Colegio de Posgrado<br>
 Maestría en Ciencia de Datos · Módulo: Analítica Avanzada
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
