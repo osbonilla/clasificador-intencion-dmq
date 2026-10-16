@@ -1,11 +1,12 @@
-# Clasificación de la intención en reportes ciudadanos del DMQ con BERT
+# Clasificación de la intención en reportes ciudadanos con BERT
 
-**Miniproyecto · Maestría en Ciencia de Datos · Universidad San Francisco de Quito**
+**Universidad San Francisco de Quito** · Colegio de Posgrados<br>
+Maestría en Ciencia de Datos · Módulo: Analítica Avanzada
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-CUDA%2012.8-EE4C2C?logo=pytorch&logoColor=white)
 ![Transformers](https://img.shields.io/badge/Hugging%20Face-Transformers-FFD21E?logo=huggingface&logoColor=black)
-![BETO](https://img.shields.io/badge/Modelo-BETO%20%28BERT%20espa%C3%B1ol%29-6A1B9A)
+![BERT](https://img.shields.io/badge/Modelo-BERT%20espa%C3%B1ol-6A1B9A)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-TF--IDF-F7931E?logo=scikitlearn&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-Qwen%202.5%207B-000000?logo=ollama&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
@@ -16,7 +17,11 @@
 ![ArcGIS Pro](https://img.shields.io/badge/ArcGIS%20Pro-GeoAI%20%C2%B7%20.dlpk-005E95?logo=arcgis&logoColor=white)
 ![arcgis.learn](https://img.shields.io/badge/ArcGIS%20API%20for%20Python-arcgis.learn-1F6FB2?logo=arcgis&logoColor=white)
 
-BERT en español (BETO) ajustado para leer el texto de un reporte ciudadano de Quito y decir **qué pide** quien lo escribió: `queja`, `denuncia`, `solicitud`, `consulta`, `sugerencia` o `agradecimiento`. El modelo se evalúa sobre una capa real de **ArcGIS Online** (formulario Survey123 con 1 500 reportes en las 65 parroquias del DMQ) y se despliega en **ArcGIS** como paquete de deep learning (`.dlpk`).
+BERT en español ajustado para leer el texto de un reporte ciudadano de Quito y decir **qué pide** quien lo escribió: `queja`, `denuncia`, `solicitud`, `consulta`, `sugerencia` o `agradecimiento`. El modelo se evalúa sobre una capa real de **ArcGIS Online** (formulario Survey123 con 1 500 reportes en las 65 parroquias del DMQ) y se despliega en **ArcGIS** como paquete de deep learning (`.dlpk`).
+
+<p align="center">
+  <img src="imgs/proyecto.png" alt="Clasificación de la intención en reportes ciudadanos del DMQ" width="900">
+</p>
 
 ---
 
@@ -48,7 +53,7 @@ Un modelo de **sentimiento** no basta: una queja y una denuncia son igual de neg
 
 **Preguntas**
 
-1. ¿Cuánto mejora BETO ajustado frente a una línea base clásica (TF-IDF + regresión logística) y frente a un SLM generativo sin entrenar (Qwen 2.5 7B)?
+1. ¿Cuánto mejora BERT ajustado frente a una línea base clásica (TF-IDF + regresión logística) y frente a un SLM generativo sin entrenar (Qwen 2.5 7B)?
 2. ¿Cuánto cae el desempeño con textos escritos por personas frente a textos sintéticos?
 3. ¿Qué patrones espaciales aparecen al clasificar los reportes de la capa?
 4. ¿Se puede llevar el modelo a ArcGIS, donde viven los datos?
@@ -57,19 +62,19 @@ Un modelo de **sentimiento** no basta: una queja y una denuncia son igual de neg
 
 ## 2. Resultados
 
-Corrida en una GPU NVIDIA RTX PRO 500 Blackwell (6 GB). Entrenamiento de BETO: 4 épocas en **0,9 minutos**.
+Corrida en una GPU NVIDIA RTX PRO 500 Blackwell (6 GB). Entrenamiento de BERT: 4 épocas en **0,9 minutos**.
 
 | Modelo | F1 prueba sintética | F1 prueba humana | ms por texto | Tiempo para 1 500 reportes |
 |---|---|---|---|---|
 | TF-IDF + regresión logística | 0,82 | 0,57 | 0,2 | 0,3 s |
-| **BETO ajustado** | **0,997** | 0,77 | 1,9 | **3 s** |
+| **BERT ajustado** | **0,997** | 0,77 | 1,9 | **3 s** |
 | Qwen 2.5 7B *zero-shot* | 0,79 ¹ | **0,86** | 1 135 | 28 min |
 
 ¹ Muestra de 120 textos, por el tiempo de inferencia.
 
 | Sobre la capa de ArcGIS Online | Valor |
 |---|---|
-| Accuracy / F1 macro de BETO sobre los 1 500 reportes | 1,00 / 1,00 (optimista: mismo generador) |
+| Accuracy / F1 macro de BERT sobre los 1 500 reportes | 1,00 / 1,00 (optimista: mismo generador) |
 | Reportes asignados a su parroquia por unión espacial | 100 % (65 parroquias) |
 | Parroquia con más denuncias | La Concepción (foco de seguridad simulado) |
 | Parroquias con más quejas | Chimbacalle y Quitumbe |
@@ -80,9 +85,9 @@ Corrida en una GPU NVIDIA RTX PRO 500 Blackwell (6 GB). Entrenamiento de BETO: 4
 **Hallazgos**
 
 1. **Sentimiento ≠ intención.** RoBERTuito marcó como NEG la queja, la denuncia y la solicitud de ejemplo.
-2. **BETO supera a TF-IDF** en la prueba humana (0,77 vs 0,57): el contexto importa más que las palabras sueltas.
-3. **Qwen sin entrenamiento generaliza mejor al texto libre** (0,86), pero es unas 600 veces más lento. BETO es la opción para clasificar a escala; un esquema híbrido (BETO para todo, Qwen solo para casos de baja confianza) combinaría ambas ventajas.
-4. **Límite de los datos sintéticos.** BETO pasa de 0,997 a 0,77 entre plantillas y texto libre. La clase más difícil es **denuncia** (recall 0,33): sin la palabra "denuncio", el modelo la confunde con queja.
+2. **BERT supera a TF-IDF** en la prueba humana (0,77 vs 0,57): el contexto importa más que las palabras sueltas.
+3. **Qwen sin entrenamiento generaliza mejor al texto libre** (0,86), pero es unas 600 veces más lento. BERT es la opción para clasificar a escala; un esquema híbrido (BERT para todo, Qwen solo para casos de baja confianza) combinaría ambas ventajas.
+4. **Límite de los datos sintéticos.** BERT pasa de 0,997 a 0,77 entre plantillas y texto libre. La clase más difícil es **denuncia** (recall 0,33): sin la palabra "denuncio", el modelo la confunde con queja.
 
 Figuras generadas en `salidas/`: matrices de confusión, curva de entrenamiento, comparación de modelos y `mapa_intenciones.png` (reportes, % de denuncias y % de agradecimientos por parroquia).
 
@@ -96,6 +101,8 @@ clasificador-intencion-dmq/
 ├── README.md
 ├── requirements.txt
 ├── .env.example                      credenciales de ArcGIS Online (copiar a .env)
+├── imgs/
+│   └── proyecto.png                  imagen descriptiva del proyecto (portada del README)
 ├── datos/
 │   ├── entrenamiento.csv             1 788 textos sintéticos · 16 estructuras de frase
 │   ├── prueba_sintetica.csv          593 textos sintéticos · 6 estructuras nunca vistas
@@ -142,20 +149,72 @@ python generador/generar_datos.py --n-por-clase 400 --seed 7
 
 ## 5. Metodología
 
+### 5.0 Arquitectura de la solución
+
+La solución tiene cuatro bloques: **fuentes** (ArcGIS Online y los conjuntos de texto), **entrenamiento y evaluación** (notebook), **análisis espacial** y **despliegue** en ArcGIS.
+
 ```mermaid
 flowchart LR
-    A[ArcGIS Online<br/>capa Survey123] -->|REST: generateToken + query| B[1 500 reportes]
-    G[generador/] --> D[entrenamiento.csv<br/>prueba_sintetica.csv]
-    H[prueba_humana.csv] --> F
-    D -->|load_dataset| E[BETO<br/>fine-tuning]
-    E --> F{Evaluación}
-    T[TF-IDF] --> F
-    Q[Qwen 2.5 7B<br/>Ollama] --> F
-    E -->|predecir| B
-    B -->|unión espacial| P[Intención por parroquia<br/>mapas]
-    E -->|save_pretrained + .emd| K[.dlpk]
-    K --> L[ArcGIS Pro<br/>Classify Text Using Deep Learning]
-    B -->|REST: addToDefinition + updateFeatures| A
+    subgraph FUENTES["Fuentes de datos"]
+        S123["Survey123<br/>formulario"] --> AGOL[("ArcGIS Online<br/>capa de reportes")]
+        PARR[("ArcGIS Online<br/>parroquias DMQ")]
+        GEN["generador/<br/>plantillas"] --> CSV[("entrenamiento.csv<br/>prueba_sintetica.csv")]
+        HUM[("prueba_humana.csv")]
+        VER[("verdad_reportes.csv")]
+    end
+
+    subgraph NB["Notebook · entrenamiento y evaluación"]
+        DS["load_dataset<br/>train 80 % · val 20 %"] --> BERT["BERT en español<br/>fine-tuning"]
+        BERT --> EV{"Evaluación<br/>F1 · matriz"}
+        TF["TF-IDF + LogReg"] --> EV
+        QW["Qwen 2.5 7B<br/>Ollama · zero-shot"] --> EV
+    end
+
+    subgraph GEO["Análisis espacial"]
+        PRED["Intención de<br/>1 500 reportes"] --> UNI["Unión espacial<br/>punto en polígono"] --> MAP["Mapas y tablas<br/>por parroquia"]
+    end
+
+    subgraph DEP["Despliegue en ArcGIS"]
+        DLPK["ClasificadorIntencionDMQ.dlpk"] --> PRO["ArcGIS Pro<br/>Classify Text Using<br/>Deep Learning"]
+        DLPK --> LEARN["arcgis.learn<br/>TextClassifier"]
+    end
+
+    CSV --> DS
+    HUM --> EV
+    AGOL -->|"REST: generateToken + query"| PRED
+    BERT -->|predecir| PRED
+    VER -->|"evaluar por código"| PRED
+    PARR -->|"REST: query"| UNI
+    BERT -->|"save_pretrained + .emd"| DLPK
+    PRED -->|"REST: addToDefinition + updateFeatures"| AGOL
+```
+
+**Flujo del notebook, sección por sección:**
+
+```mermaid
+flowchart TB
+    A["0 · Configuración<br/>parámetros, GPU"] --> B["1 · RoBERTuito<br/>¿basta el sentimiento?"]
+    B --> C["2 · Datos ArcGIS Online<br/>capa + verdad"]
+    C --> D["3 · load_dataset<br/>quitar textos de la capa"]
+    D --> E["4-5 · Modelo BERT<br/>Dataset y DataLoader"]
+    E --> F["6 · Entrenamiento<br/>AdamW + warmup, mejor época"]
+    F --> G["7-8 · Evaluación<br/>y predicción"]
+    G --> H["9 · Comparación<br/>TF-IDF · Qwen"]
+    H --> I["10 · Capa ArcGIS<br/>unión espacial y mapas"]
+    I --> J["11 · Empaquetar .dlpk<br/>verificar · publicar en AGOL"]
+```
+
+**Partición de los datos:**
+
+```mermaid
+flowchart LR
+    T["textos.py<br/>22 estructuras de frase"] --> TR["16 estructuras<br/>Q1–Q4 · D1–D3 · S1–S3<br/>C1–C2 · G1–G2 · A1–A2"]
+    T --> TE["6 estructuras reservadas<br/>Q5 · D4 · S4 · C3 · G3 · A3"]
+    TR --> E1["entrenamiento.csv"]
+    E1 --> TRAIN["train 80 %<br/>ajusta los pesos"]
+    E1 --> VAL["validación 20 %<br/>elige la mejor época"]
+    TE --> PS["prueba_sintetica.csv<br/>test 1"]
+    H["Redacción libre<br/>sin plantillas"] --> PH["prueba_humana.csv<br/>test 2"]
 ```
 
 ### 5.1 Relación con el notebook de clase
@@ -166,7 +225,7 @@ El notebook sigue la misma estructura del ejemplo de BERT visto en clase:
 |---|---|
 | `pipeline("text-classification", "pysentimiento/robertuito-sentiment-analysis")` | Se usa el mismo modelo para mostrar que el sentimiento no distingue intenciones |
 | `load_dataset(...)` + división 80/20 con `random.shuffle` | `load_dataset("csv", ...)` con los tres conjuntos, misma división 80/20 |
-| `AutoModelForSequenceClassification("dccuchile/bert-base-spanish-wwm-uncased", num_labels=2)` | Mismo BETO, `num_labels=6` con `id2label` / `label2id` |
+| `AutoModelForSequenceClassification("dccuchile/bert-base-spanish-wwm-uncased", num_labels=2)` | Mismo BERT, `num_labels=6` con `id2label` / `label2id` |
 | `ReviewDataset` + `tokenize_texts` | `ReporteDataset` + `tokenizar` |
 | `AdamW` + `get_linear_schedule_with_warmup` + `clip_grad_norm_` | Igual |
 | `evaluate` → accuracy, F1 macro, `classification_report` | `evaluar`, más matrices de confusión |
@@ -188,7 +247,7 @@ El notebook sigue la misma estructura del ejemplo de BERT visto en clase:
 
 ### 5.3 Aplicación espacial
 
-BETO clasifica la `descripcion` de los 1 500 reportes. Cada punto se asigna a su parroquia con una unión espacial punto-en-polígono (respetando huecos) contra la capa pública de parroquias del DMQ, y se calcula la proporción de cada intención por parroquia.
+BERT clasifica la `descripcion` de los 1 500 reportes. Cada punto se asigna a su parroquia con una unión espacial punto-en-polígono (respetando huecos) contra la capa pública de parroquias del DMQ, y se calcula la proporción de cada intención por parroquia.
 
 ---
 
@@ -225,7 +284,7 @@ jupyter notebook clasificador_intencion.ipynb
 
 Ejecuta celda por celda la primera vez. Todo lo configurable está en la celda **Parámetros**.
 
-> Si vuelves a ejecutar la celda que carga BETO (sección 4) después de entrenar, el modelo vuelve a su estado sin entrenar. Para repetir algo, usa **Restart + Run All**.
+> Si vuelves a ejecutar la celda que carga BERT (sección 4) después de entrenar, el modelo vuelve a su estado sin entrenar. Para repetir algo, usa **Restart + Run All**.
 
 ---
 
@@ -239,7 +298,7 @@ El modelo se entrega en el formato nativo de ArcGIS para modelos de IA: un **paq
 ClasificadorIntencionDMQ.dlpk  (ZIP con este contenido en la raíz)
 ├── ClasificadorIntencionDMQ.emd   definición del modelo (JSON)
 ├── ClasificadorIntencionDMQ.py    función de inferencia
-└── modelo/                        BETO ajustado (config.json, model.safetensors, tokenizer)
+└── modelo/                        BERT ajustado (config.json, model.safetensors, tokenizer)
 ```
 
 **Archivo `.emd`** (lo genera el notebook):
@@ -262,6 +321,29 @@ ClasificadorIntencionDMQ.dlpk  (ZIP con este contenido en la raíz)
 | `getParameterInfo()` | Expone `max_length` como argumento del modelo en la herramienta |
 | `getConfiguration(**kwargs)` | Recibe `max_length` y `batch_size` elegidos por el usuario |
 | `predict(feature_set, **kwargs)` | Lee el campo de texto `kwargs["input_field"]` y devuelve un `FeatureSet` con `input_str` y `class` |
+
+Así lo usa ArcGIS al ejecutar la herramienta:
+
+```mermaid
+sequenceDiagram
+    participant U as Usuario
+    participant P as ArcGIS Pro<br/>Classify Text Using DL
+    participant C as ClasificadorIntencionDMQ.py
+    participant M as modelo/ (BERT)
+    U->>P: capa + campo descripcion + .dlpk
+    P->>P: descomprime el .dlpk y lee el .emd
+    P->>C: __init__()
+    P->>C: initialize(model=ruta .emd)
+    C->>M: carga tokenizador y pesos
+    P->>C: getParameterInfo() / getConfiguration()
+    loop por lotes de registros
+        P->>C: predict(FeatureSet, input_field="descripcion")
+        C->>M: tokenizar + softmax
+        M-->>C: clase más probable
+        C-->>P: FeatureSet (input_str, class)
+    end
+    P-->>U: campo intencion_bert en la capa
+```
 
 **Reglas que hay que respetar**, verificadas en el código de `arcgis.learn` 2.4:
 
@@ -329,12 +411,12 @@ La carpeta `modelo/` es el formato estándar de Hugging Face, así que también 
 
 ## 8. Limitaciones y trabajo futuro
 
-- **Datos sintéticos.** La capa y el entrenamiento salen del mismo generador, así que el desempeño sobre la capa es optimista. La métrica creíble es la de la **prueba humana**, que tiene solo 36 textos redactados con asistencia de IA, no por ciudadanos reales: un error mueve el F1 unos 3 puntos, y la ventaja de Qwen sobre BETO equivale a unos 3 textos. Siguiente paso: que 5 a 10 personas escriban reportes, etiquetarlos con dos anotadores y medir el acuerdo (kappa de Cohen).
+- **Datos sintéticos.** La capa y el entrenamiento salen del mismo generador, así que el desempeño sobre la capa es optimista. La métrica creíble es la de la **prueba humana**, que tiene solo 36 textos redactados con asistencia de IA, no por ciudadanos reales: un error mueve el F1 unos 3 puntos, y la ventaja de Qwen sobre BERT equivale a unos 3 textos. Siguiente paso: que 5 a 10 personas escriban reportes, etiquetarlos con dos anotadores y medir el acuerdo (kappa de Cohen).
 - **Una etiqueta por texto.** Un reporte que se queja *y* pide algo recibe la intención dominante. Una versión multietiqueta lo resolvería.
 - **Solo texto.** El modelo no usa la categoría, la gravedad ni la ubicación.
 - **Confianza en ArcGIS Pro.** La función de inferencia devuelve solo los campos documentados por Esri (`input_str`, `class`). La confianza se publica desde el notebook (sección 7.4).
 - **Validación perfecta desde la primera época** (F1 = 1,00): otra señal de que los textos de plantilla son fáciles para BERT.
-- **Trabajo futuro:** esquema híbrido BETO + Qwen por confianza; más variedad de redacción en las denuncias; ampliar el entrenamiento con paráfrasis generadas por un SLM y con reportes reales etiquetados; integrar el clasificador como herramienta del agente geoespacial de la tesis.
+- **Trabajo futuro:** esquema híbrido BERT + Qwen por confianza; más variedad de redacción en las denuncias; ampliar el entrenamiento con paráfrasis generadas por un SLM y con reportes reales etiquetados; integrar el clasificador como herramienta del agente geoespacial de la tesis.
 
 ---
 
@@ -351,6 +433,6 @@ La carpeta `modelo/` es el formato estándar de Hugging Face, así que también 
 
 **Modelos**
 
-- [BETO: Spanish BERT](https://github.com/dccuchile/beto) · [`dccuchile/bert-base-spanish-wwm-uncased`](https://huggingface.co/dccuchile/bert-base-spanish-wwm-uncased)
+- [BERT en español (dccuchile)](https://github.com/dccuchile/beto) · [`dccuchile/bert-base-spanish-wwm-uncased`](https://huggingface.co/dccuchile/bert-base-spanish-wwm-uncased)
 - [`pysentimiento/robertuito-sentiment-analysis`](https://huggingface.co/pysentimiento/robertuito-sentiment-analysis)
 - [Qwen2.5](https://ollama.com/library/qwen2.5) vía Ollama

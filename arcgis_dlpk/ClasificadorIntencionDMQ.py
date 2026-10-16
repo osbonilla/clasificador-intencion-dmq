@@ -36,7 +36,7 @@ class ClasificadorIntencionDMQ:
 
     def __init__(self, **kwargs):
         self.name = "Clasificador de intención de reportes ciudadanos (DMQ)"
-        self.description = ("BERT en español (BETO) ajustado para clasificar reportes en: "
+        self.description = ("BERT en español ajustado para clasificar reportes en: "
                             "queja, denuncia, solicitud, consulta, sugerencia, agradecimiento.")
         self.model = None
         self.tokenizer = None
