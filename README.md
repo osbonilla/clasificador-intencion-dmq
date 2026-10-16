@@ -1,4 +1,4 @@
-   <p align="center">
+<p align="center">
      <img src="imgs/proyecto.jpg" alt="Clasificación de la intención en reportes ciudadanos del DMQ" width="900">
    </p>
 
@@ -102,7 +102,7 @@ clasificador-intencion-dmq/
 ├── requirements.txt
 ├── .env.example                      credenciales de ArcGIS Online (copiar a .env)
 ├── imgs/
-│   └── proyecto.png                  imagen descriptiva del proyecto (portada del README)
+│   └── proyecto.jpg                  imagen descriptiva del proyecto (portada del README)
 ├── datos/
 │   ├── entrenamiento.csv             1 788 textos sintéticos · 16 estructuras de frase
 │   ├── prueba_sintetica.csv          593 textos sintéticos · 6 estructuras nunca vistas
@@ -149,7 +149,54 @@ python generador/generar_datos.py --n-por-clase 400 --seed 7
 
 ## 5. Metodología
 
-### 5.0 Arquitectura de la solución
+### 5.1 Fundamento teórico: Transformer, GPT y BERT
+
+BERT (Devlin et al., 2019) y GPT derivan de la arquitectura **Transformer** (Vaswani et al., 2017), que combina un **encoder** (lee la entrada) y un **decoder** (genera la salida). Cada familia conserva solo una mitad:
+
+```mermaid
+flowchart BT
+    subgraph BE["BERT · solo encoder"]
+        direction BT
+        bi["Texto completo"] --> be["Embedding<br/>token + segmento + posición"] --> benc["Encoder × N<br/>Multi-Head Attention<br/>bidireccional: ve toda la frase"] --> bsm["Linear + Softmax<br/>clase"]
+    end
+    subgraph GPT["GPT · solo decoder"]
+        direction BT
+        gi["Tokens anteriores"] --> ge["Embedding<br/>+ posición"] --> gdec["Decoder × N<br/>Masked Multi-Head Attention<br/>solo ve tokens anteriores"] --> gsm["Linear + Softmax<br/>siguiente token"]
+    end
+    subgraph TR["Transformer · encoder + decoder"]
+        direction BT
+        ti["Entradas"] --> te["Embedding<br/>+ posición"] --> tenc["Encoder × N<br/>Multi-Head Attention<br/>Feed Forward"]
+        to["Salidas desplazadas"] --> tde["Embedding<br/>+ posición"] --> tdec["Decoder × N<br/>Masked Multi-Head Attention<br/>Cross-Attention · Feed Forward"]
+        tenc --> tdec
+        tdec --> tsm["Linear + Softmax<br/>probabilidades de salida"]
+    end
+```
+
+*Diagrama elaborado a partir de la comparación de Smith (2024), adaptada de Vaswani et al. (2017).*
+
+| | Transformer | GPT (solo decoder) | BERT (solo encoder) |
+|---|---|---|---|
+| Atención | Encoder + decoder | **Enmascarada**: cada token ve solo los anteriores | **Bidireccional**: cada token ve toda la frase |
+| Preentrenamiento | Traducción | Predecir el siguiente token | *Masked Language Modelling* (15 % de tokens enmascarados) y *Next Sentence Prediction* |
+| Uso natural | Traducción | **Generar** texto | **Entender y clasificar** texto |
+| En este proyecto | — | **Qwen 2.5 7B** (*zero-shot*) | **BERT en español** (*fine-tuning*) |
+
+La comparación de la sección 2 es, en el fondo, **encoder vs decoder**: el encoder pequeño y ajustado clasifica en 1,9 ms; el decoder grande sin entrenar entiende mejor el texto libre, pero tarda más de un segundo por reporte.
+
+**Cómo clasifica BERT un reporte.** Sobre el BERT preentrenado se agrega una capa lineal nueva (la única sin preentrenar: los pesos `classifier.*` que el notebook marca como *MISSING*) que toma el vector del token `[CLS]`, que resume toda la frase, y lo convierte en seis puntajes. El *fine-tuning* ajusta esa capa y todo el encoder.
+
+```mermaid
+flowchart BT
+    IN["Reporte: «hay unos tipos vendiendo droga…»"] --> TOK["Tokenización WordPiece<br/>[CLS] hay unos tipos vend ##iendo droga … [SEP]"]
+    TOK --> EMB["Embeddings<br/>token + segmento + posición"]
+    EMB --> ENC["Encoder × 12 capas<br/>Multi-Head Self-Attention bidireccional<br/>+ Feed Forward + Add & Norm"]
+    ENC --> CLS["Vector del token [CLS]<br/>768 dimensiones"]
+    CLS --> LIN["Capa lineal nueva<br/>768 → 6 (se entrena en el fine-tuning)"]
+    LIN --> SM["Softmax"]
+    SM --> OUT["queja · denuncia · solicitud<br/>consulta · sugerencia · agradecimiento"]
+```
+
+### 5.2 Arquitectura de la solución
 
 La solución tiene cuatro bloques: **fuentes** (ArcGIS Online y los conjuntos de texto), **entrenamiento y evaluación** (notebook), **análisis espacial** y **despliegue** en ArcGIS.
 
@@ -217,7 +264,7 @@ flowchart LR
     H["Redacción libre<br/>sin plantillas"] --> PH["prueba_humana.csv<br/>test 2"]
 ```
 
-### 5.1 Relación con el notebook de clase
+### 5.3 Relación con el notebook de clase
 
 El notebook sigue la misma estructura del ejemplo de BERT visto en clase:
 
@@ -240,12 +287,12 @@ El notebook sigue la misma estructura del ejemplo de BERT visto en clase:
 | Validación cada época | Permite elegir la mejor época y graficar la curva |
 | `predecir` en lotes | Clasificar 1 500 textos de una vez agota la memoria |
 
-### 5.2 Comparación
+### 5.4 Comparación
 
 - **TF-IDF + regresión logística** (n-gramas de palabras 1-2 y de caracteres 2-5): si BERT no la supera, no se justifica.
 - **Qwen 2.5 7B *zero-shot*** vía Ollama: el SLM de la tesis, con las definiciones de cada intención en el prompt y la salida restringida a un esquema JSON con las seis etiquetas. Mide si un modelo generativo sin entrenamiento resuelve la tarea, y a qué costo de tiempo.
 
-### 5.3 Aplicación espacial
+### 5.5 Aplicación espacial
 
 BERT clasifica la `descripcion` de los 1 500 reportes. Cada punto se asigna a su parroquia con una unión espacial punto-en-polígono (respetando huecos) contra la capa pública de parroquias del DMQ, y se calcula la proporción de cada intención por parroquia.
 
@@ -430,6 +477,12 @@ La carpeta `modelo/` es el formato estándar de Hugging Face, así que también 
 - [Exploring model extensibility for named entity recognition](https://developers.arcgis.com/python/latest/guide/exploring-model-extensibility-for-named-entity-recognition/): ejemplo completo de `.dlpk` con función propia (`ArcGISLearnVersion` 2.4.0).
 - [Install deep learning frameworks for ArcGIS](https://doc.esri.com/en/arcgis-pro/latest/help/analysis/deep-learning/install-deep-learning-frameworks.html) y [Esri/deep-learning-frameworks](https://github.com/Esri/deep-learning-frameworks): librerías de deep learning de ArcGIS Pro (versión de `transformers`).
 - [Add To Definition (Feature Layer)](https://developers.arcgis.com/rest/services-reference/online/add-to-definition-feature-layer-.htm): agregar campos a una capa alojada.
+
+**BERT y Transformers**
+
+- Devlin, J., Chang, M.-W., Lee, K. y Toutanova, K. (2019). [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805). *NAACL-HLT*.
+- Vaswani, A. et al. (2017). [Attention Is All You Need](https://arxiv.org/abs/1706.03762). *NeurIPS*.
+- Smith, B. (2024). [A Complete Guide to BERT with Code](https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11/). *Towards Data Science*.
 
 **Modelos**
 
