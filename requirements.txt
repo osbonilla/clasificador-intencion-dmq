@@ -1,0 +1,10 @@
+# Las mismas librerías del notebook de clase, más requests para la API REST de ArcGIS.
+# GPU NVIDIA: instala antes torch con CUDA (ver README).
+torch>=2.2
+transformers>=4.51
+datasets>=3.0
+scikit-learn>=1.4
+pandas>=2.0
+matplotlib>=3.8
+requests>=2.31
+notebook>=7.0

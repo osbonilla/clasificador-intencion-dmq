@@ -1,0 +1,594 @@
+texto,intencion,categoria,plantilla
+Buenas tardes. ¿A quién debo acudir para poner una parada junto al mercado? Gracias.,consulta,transporte,C3
+Buenas tardes. ¿A quién debo acudir para tapar el bache frente a la escuela?,consulta,vias,C3
+Como vecino del sector: los vecinos estamos molestos porque las lámparas no funcionan a media cuadra del UPC.,queja,alumbrado,Q5
+"Excelente trabajo, gracias por sembrar los árboles en el pasaje tan rápido.",agradecimiento,areas_verdes,A3
+Como vecino del sector: ¿A quién debo acudir para revisar el permiso del local en mi cuadra?,consulta,ruido,C3
+"Excelente trabajo, gracias por cambiar la tubería en la entrada del conjunto tan rápido.",agradecimiento,agua,A3
+"Excelente trabajo, gracias por reparar el colector en la calle principal tan rápido. Felicitaciones al equipo.",agradecimiento,alcantarillado,A3
+¿A quién debo acudir para revisar el alumbrado por el redondel? Saludos.,consulta,alumbrado,C3
+Buenos días. Sugiero poner más cámaras en la bajada al barrio para mejorar el sector. Sería de gran ayuda.,sugerencia,seguridad,G3
+Buenas tardes. Los vecinos estamos molestos porque las lámparas no funcionan en el pasaje.,queja,alumbrado,Q5
+"Les informo que un local pone parlantes en la vereda cerca del parque, esto es ilegal. Tenemos miedo.",denuncia,ruido,D4
+"Estimados: requerimos aumentar la frecuencia de buses en mi barrio, gracias de antemano. Ya van meses esperando y nada.",solicitud,transporte,S4
+Buenos días. Sugiero poner horarios para la música en el pasaje para mejorar el sector. Saludos.,sugerencia,ruido,G3
+"Requerimos hacer una campaña de esterilización en la entrada del conjunto, gracias de antemano. Quedo atento.",solicitud,animales,S4
+Como vecino del sector: los vecinos estamos molestos porque la zona es muy insegura por el redondel. Exigimos una solución urgente.,queja,seguridad,Q5
+"Hola, requerimos cambiar la lámpara del poste en el pasaje, gracias de antemano. Gracias.",solicitud,alumbrado,S4
+"Excelente trabajo, gracias por crear la nueva ruta en la calle principal tan rápido.",agradecimiento,transporte,A3
+Los vecinos estamos molestos porque hay muchos perros abandonados en la parada del bus. Los vecinos estamos cansados.,queja,animales,Q5
+¿A quién debo acudir para instalar una cámara de vigilancia en la esquina de mi casa? Agradezco la respuesta.,consulta,seguridad,C3
+"Hola, les informo que hay fiestas clandestinas hasta la madrugada en la bajada al barrio, esto es ilegal.",denuncia,ruido,D4
+"Requerimos controlar el ruido en la entrada del conjunto, gracias de antemano.",solicitud,ruido,S4
+Sugiero hacer campañas de adopción en la entrada del conjunto para mejorar el sector.,sugerencia,animales,G3
+"Requerimos hacer un operativo de control frente a la iglesia, gracias de antemano.",solicitud,ruido,S4
+Como vecino del sector: los vecinos estamos molestos porque hay muchos robos frente a la escuela. Es indignante.,queja,seguridad,Q5
+"Hola, sugiero poner horarios en las paradas en mi barrio para mejorar el sector. Saludos.",sugerencia,transporte,G3
+"Hola, ¿A quién debo acudir para reparar los juegos frente a la escuela? Gracias.",consulta,areas_verdes,C3
+"Hola, los vecinos estamos molestos porque la música está a todo volumen atrás del centro de salud.",queja,ruido,Q5
+Los vecinos estamos molestos porque la calle está destruida por el redondel.,queja,vias,Q5
+"Estimados: les informo que hay fiestas clandestinas hasta la madrugada en la bajada al barrio, esto es ilegal.",denuncia,ruido,D4
+Sugiero señalizar el paso peatonal en mi barrio para mejorar el sector. Gracias.,sugerencia,vias,G3
+¿A quién debo acudir para instalar una cámara de vigilancia en la esquina de mi casa? Saludos.,consulta,seguridad,C3
+"Estimados: les informo que hay fiestas clandestinas hasta la madrugada en la calle principal, esto es ilegal.",denuncia,ruido,D4
+"Excelente trabajo, gracias por instalar las cámaras atrás del centro de salud tan rápido. Sigan así.",agradecimiento,seguridad,A3
+Como vecino del sector: los vecinos estamos molestos porque el poste de luz está quemado en la esquina de mi casa.,queja,alumbrado,Q5
+Estimados: los vecinos estamos molestos porque el ruido no deja dormir en mi barrio.,queja,ruido,Q5
+"Excelente trabajo, gracias por controlar el ruido por el redondel tan rápido. Felicitaciones al equipo.",agradecimiento,ruido,A3
+"Estimados: excelente trabajo, gracias por sembrar los árboles junto al mercado tan rápido.",agradecimiento,areas_verdes,A3
+Estimados: ¿A quién debo acudir para destapar el colector a media cuadra del UPC? Gracias.,consulta,alcantarillado,C3
+Estimados: sugiero colocar más basureros en mi barrio para mejorar el sector. Gracias.,sugerencia,basura,G3
+Buenos días. Los vecinos estamos molestos porque la zona es muy insegura atrás del centro de salud.,queja,seguridad,Q5
+Estimados: ¿A quién debo acudir para instalar una cámara de vigilancia en la calle principal? Saludos.,consulta,seguridad,C3
+"Buenas tardes. Excelente trabajo, gracias por atender nuestro llamado frente a la escuela tan rápido. Sigan así.",agradecimiento,seguridad,A3
+"Como vecino del sector: excelente trabajo, gracias por hacer la campaña de esterilización frente a la escuela tan rápido.",agradecimiento,animales,A3
+"Requerimos destapar el colector cerca del parque, gracias de antemano.",solicitud,alcantarillado,S4
+Como vecino del sector: los vecinos estamos molestos porque da miedo caminar de noche frente a la iglesia.,queja,seguridad,Q5
+Los vecinos estamos molestos porque la música está a todo volumen en mi cuadra. Exigimos una solución urgente.,queja,ruido,Q5
+"Requerimos instalar más luminarias junto al mercado, gracias de antemano. Saludos.",solicitud,alumbrado,S4
+"Buenos días. Requerimos destapar el colector cerca del parque, gracias de antemano. Quedo atento.",solicitud,alcantarillado,S4
+"Buenas tardes. Excelente trabajo, gracias por restablecer el servicio de agua atrás del centro de salud tan rápido.",agradecimiento,agua,A3
+"Buenas tardes. Requerimos hacer un operativo de control por el redondel, gracias de antemano.",solicitud,ruido,S4
+"Requerimos aumentar la frecuencia de buses por el redondel, gracias de antemano. Gracias.",solicitud,transporte,S4
+"Les informo que hay fiestas clandestinas hasta la madrugada en mi cuadra, esto es ilegal.",denuncia,ruido,D4
+Sugiero cambiar las tuberías viejas en mi cuadra para mejorar el sector. Estamos hartos de esperar.,sugerencia,agua,G3
+"Les informo que un local pone parlantes en la vereda en la entrada del conjunto, esto es ilegal. Ya no se puede vivir así.",denuncia,ruido,D4
+Sugiero poner horarios en las paradas en la calle principal para mejorar el sector.,sugerencia,transporte,G3
+¿A quién debo acudir para reparar la vereda en mi cuadra?,consulta,vias,C3
+"Les informo que venden droga en la esquina por el redondel, esto es ilegal. Tenemos miedo.",denuncia,seguridad,D4
+Buenas tardes. ¿A quién debo acudir para cubrir la parada en la bajada al barrio? Nadie nos hace caso.,consulta,transporte,C3
+Estimados: ¿A quién debo acudir para asfaltar la calle cerca del parque? Ya van meses esperando y nada.,consulta,vias,C3
+"Excelente trabajo, gracias por instalar las cámaras en la entrada del conjunto tan rápido. Sigan así.",agradecimiento,seguridad,A3
+¿A quién debo acudir para hacer una campaña de esterilización en mi barrio? Es la tercera vez que lo pido.,consulta,animales,C3
+"Buenas tardes. Les informo que hay fiestas clandestinas hasta la madrugada junto al mercado, esto es ilegal. Por favor actúen.",denuncia,ruido,D4
+Como vecino del sector: sugiero sembrar más árboles frente a la iglesia para mejorar el sector. Saludos.,sugerencia,areas_verdes,G3
+"Hola, requerimos instalar más luminarias en la bajada al barrio, gracias de antemano. Gracias.",solicitud,alumbrado,S4
+"Requerimos cubrir la parada cerca del parque, gracias de antemano. Gracias.",solicitud,transporte,S4
+"Como vecino del sector: requerimos retirar el animal muerto en la parada del bus, gracias de antemano.",solicitud,animales,S4
+"Como vecino del sector: requerimos instalar una cámara de vigilancia en la parada del bus, gracias de antemano.",solicitud,seguridad,S4
+Los vecinos estamos molestos porque la calle está destruida en la bajada al barrio.,queja,vias,Q5
+"Requerimos limpiar las alcantarillas en la esquina de mi casa, gracias de antemano. Gracias.",solicitud,alcantarillado,S4
+"Hola, les informo que abandonan cachorros en el parque cerca del parque, esto es ilegal. Por favor actúen.",denuncia,animales,D4
+Buenas tardes. ¿A quién debo acudir para tapar el bache frente a la iglesia?,consulta,vias,C3
+Sugiero iluminar mejor el pasaje frente a la iglesia para mejorar el sector. Estamos hartos de esperar.,sugerencia,alumbrado,G3
+"Como vecino del sector: requerimos recoger la basura acumulada atrás del centro de salud, gracias de antemano. Estamos hartos de esperar.",solicitud,basura,S4
+"Buenas tardes. Requerimos poner un botón de pánico frente a la iglesia, gracias de antemano.",solicitud,seguridad,S4
+"Hola, excelente trabajo, gracias por arreglar el bache en el pasaje tan rápido. Felicitaciones al equipo.",agradecimiento,vias,A3
+Sugiero instalar luces solares frente a la escuela para mejorar el sector.,sugerencia,alumbrado,G3
+Sugiero poner reductores de velocidad en la calle principal para mejorar el sector. Sería de gran ayuda.,sugerencia,vias,G3
+¿A quién debo acudir para revisar el permiso del local en la entrada del conjunto? Agradezco la respuesta.,consulta,ruido,C3
+"Buenas tardes. Requerimos poner una parada frente a la iglesia, gracias de antemano. Quedo atento.",solicitud,transporte,S4
+"Hola, requerimos aumentar la frecuencia de buses en la calle principal, gracias de antemano. Quedo atento.",solicitud,transporte,S4
+"Hola, requerimos reparar los juegos frente a la escuela, gracias de antemano. Saludos.",solicitud,areas_verdes,S4
+"Les informo que asaltan a la gente en la parada junto al mercado, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+"Estimados: les informo que un camión deja desechos en la noche en la esquina de mi casa, esto es ilegal. Ya no se puede vivir así.",denuncia,basura,D4
+"Les informo que un bar funciona sin permiso en la esquina de mi casa, esto es ilegal.",denuncia,ruido,D4
+Sugiero avisar con tiempo los cortes de agua cerca del parque para mejorar el sector.,sugerencia,agua,G3
+Buenos días. Sugiero cambiar las tuberías viejas en la bajada al barrio para mejorar el sector.,sugerencia,agua,G3
+Los vecinos estamos molestos porque la luminaria parpadea toda la noche en la calle principal. Exigimos una solución urgente.,queja,alumbrado,Q5
+"Hola, ¿A quién debo acudir para revisar el permiso del local por el redondel?",consulta,ruido,C3
+Buenas tardes. Los vecinos estamos molestos porque da miedo caminar de noche frente a la escuela. Los vecinos estamos cansados.,queja,seguridad,Q5
+"Buenas tardes. Excelente trabajo, gracias por reparar el colector junto al mercado tan rápido. Muy agradecido.",agradecimiento,alcantarillado,A3
+Sugiero poner luminarias LED frente a la escuela para mejorar el sector. Nadie nos hace caso.,sugerencia,alumbrado,G3
+¿A quién debo acudir para poner un contenedor en la entrada del conjunto? Es la tercera vez que lo pido.,consulta,basura,C3
+"Buenos días. Requerimos reparar los juegos junto al mercado, gracias de antemano.",solicitud,areas_verdes,S4
+"Buenas tardes. Requerimos dar mantenimiento al parque atrás del centro de salud, gracias de antemano. Nadie nos hace caso.",solicitud,areas_verdes,S4
+Los vecinos estamos molestos porque se inunda todo cuando llueve en la esquina de mi casa. Los vecinos estamos cansados.,queja,alcantarillado,Q5
+Sugiero poner horarios para la música en la entrada del conjunto para mejorar el sector. Sería de gran ayuda.,sugerencia,ruido,G3
+"Les informo que un local pone parlantes en la vereda frente a la escuela, esto es ilegal.",denuncia,ruido,D4
+¿A quién debo acudir para controlar el ruido en mi barrio? Gracias.,consulta,ruido,C3
+¿A quién debo acudir para revisar la presión del agua atrás del centro de salud? Estamos hartos de esperar.,consulta,agua,C3
+Buenas tardes. Sugiero instalar medidores nuevos en la esquina de mi casa para mejorar el sector. Gracias.,sugerencia,agua,G3
+Estimados: ¿A quién debo acudir para instalar una cámara de vigilancia en mi cuadra? Saludos.,consulta,seguridad,C3
+Como vecino del sector: ¿A quién debo acudir para recoger la basura acumulada a media cuadra del UPC?,consulta,basura,C3
+"Buenos días. Requerimos hacer una campaña de esterilización por el redondel, gracias de antemano. Gracias.",solicitud,animales,S4
+Como vecino del sector: ¿A quién debo acudir para controlar el ruido en la entrada del conjunto?,consulta,ruido,C3
+Como vecino del sector: ¿A quién debo acudir para cambiar el horario del recolector en mi cuadra? Estamos hartos de esperar.,consulta,basura,C3
+"Hola, requerimos revisar el alumbrado por el redondel, gracias de antemano.",solicitud,alumbrado,S4
+"Buenas tardes. Les informo que maltratan a un perro en una casa en la parada del bus, esto es ilegal.",denuncia,animales,D4
+"Buenas tardes. Les informo que envenenaron a varios perros en mi cuadra, esto es ilegal. Tenemos miedo.",denuncia,animales,D4
+¿A quién debo acudir para poner una parada frente a la escuela? Es la tercera vez que lo pido.,consulta,transporte,C3
+Sugiero poner contenedores de reciclaje en la parada del bus para mejorar el sector.,sugerencia,basura,G3
+"Les informo que botan escombros en la quebrada a media cuadra del UPC, esto es ilegal. Ya no se puede vivir así.",denuncia,basura,D4
+"Hola, los vecinos estamos molestos porque da miedo caminar de noche a media cuadra del UPC. Es indignante.",queja,seguridad,Q5
+"Buenas tardes. Excelente trabajo, gracias por destapar el desagüe en mi cuadra tan rápido.",agradecimiento,alcantarillado,A3
+"Excelente trabajo, gracias por remodelar el parque en la entrada del conjunto tan rápido. Muy agradecido.",agradecimiento,areas_verdes,A3
+"Como vecino del sector: excelente trabajo, gracias por crear la nueva ruta en la bajada al barrio tan rápido.",agradecimiento,transporte,A3
+Los vecinos estamos molestos porque la vereda está rota en mi cuadra. Es indignante.,queja,vias,Q5
+Buenos días. Sugiero iluminar mejor el pasaje en mi barrio para mejorar el sector. Gracias.,sugerencia,alumbrado,G3
+"Les informo que asaltan a la gente en la parada en mi barrio, esto es ilegal.",denuncia,seguridad,D4
+¿A quién debo acudir para dar mantenimiento al parque atrás del centro de salud? Saludos.,consulta,areas_verdes,C3
+"Requerimos cambiar la lámpara del poste frente a la escuela, gracias de antemano.",solicitud,alumbrado,S4
+Sugiero poner reductores de velocidad atrás del centro de salud para mejorar el sector. Saludos.,sugerencia,vias,G3
+"Excelente trabajo, gracias por arreglar el alumbrado en la bajada al barrio tan rápido. Muy agradecido.",agradecimiento,alumbrado,A3
+"Excelente trabajo, gracias por destapar el desagüe en la bajada al barrio tan rápido. Sigan así.",agradecimiento,alcantarillado,A3
+"Buenos días. Requerimos instalar más luminarias en el pasaje, gracias de antemano. Quedo atento.",solicitud,alumbrado,S4
+Sugiero iluminar mejor el pasaje frente a la iglesia para mejorar el sector. Gracias.,sugerencia,alumbrado,G3
+Sugiero poner máquinas de ejercicio frente a la escuela para mejorar el sector. Saludos.,sugerencia,areas_verdes,G3
+Los vecinos estamos molestos porque la luminaria parpadea toda la noche en la bajada al barrio. Los vecinos estamos cansados.,queja,alumbrado,Q5
+Buenas tardes. ¿A quién debo acudir para reparar la vereda cerca del parque?,consulta,vias,C3
+Estimados: sugiero poner reductores de velocidad a media cuadra del UPC para mejorar el sector.,sugerencia,vias,G3
+"Como vecino del sector: les informo que envenenaron a varios perros en la esquina de mi casa, esto es ilegal. Por favor actúen.",denuncia,animales,D4
+Buenos días. Los vecinos estamos molestos porque los contenedores están desbordados frente a la escuela. Exigimos una solución urgente.,queja,basura,Q5
+"Buenos días. Excelente trabajo, gracias por instalar las cámaras en la parada del bus tan rápido.",agradecimiento,seguridad,A3
+"Hola, excelente trabajo, gracias por controlar el ruido en la esquina de mi casa tan rápido. Muy agradecido.",agradecimiento,ruido,A3
+"Como vecino del sector: les informo que envenenaron a varios perros por el redondel, esto es ilegal.",denuncia,animales,D4
+¿A quién debo acudir para revisar el desagüe frente a la iglesia?,consulta,alcantarillado,C3
+"Hola, les informo que venden droga en la esquina en la bajada al barrio, esto es ilegal.",denuncia,seguridad,D4
+"Les informo que un local pone parlantes en la vereda en mi barrio, esto es ilegal. Ya no se puede vivir así.",denuncia,ruido,D4
+"Buenos días. Les informo que botan escombros en la quebrada atrás del centro de salud, esto es ilegal. Tenemos miedo.",denuncia,basura,D4
+"Como vecino del sector: requerimos cortar el césped por el redondel, gracias de antemano. Estamos hartos de esperar.",solicitud,areas_verdes,S4
+"Excelente trabajo, gracias por cambiar las lámparas en la calle principal tan rápido. Muy agradecido.",agradecimiento,alumbrado,A3
+"Como vecino del sector: les informo que queman basura en el terreno baldío en el pasaje, esto es ilegal.",denuncia,basura,D4
+"Estimados: requerimos tapar el bache atrás del centro de salud, gracias de antemano. Quedo atento.",solicitud,vias,S4
+Buenas tardes. Los vecinos estamos molestos porque el colector está roto atrás del centro de salud. Es indignante.,queja,alcantarillado,Q5
+"Hola, excelente trabajo, gracias por reparar los juegos en la esquina de mi casa tan rápido. Muy agradecido.",agradecimiento,areas_verdes,A3
+"Buenos días. Requerimos dar mantenimiento al parque en mi barrio, gracias de antemano. Estamos hartos de esperar.",solicitud,areas_verdes,S4
+Buenas tardes. Los vecinos estamos molestos porque los buses no paran frente a la iglesia.,queja,transporte,Q5
+Como vecino del sector: sugiero crear una ruta nueva a media cuadra del UPC para mejorar el sector.,sugerencia,transporte,G3
+Estimados: sugiero esterilizar a los perros callejeros en la calle principal para mejorar el sector. Gracias.,sugerencia,animales,G3
+Como vecino del sector: ¿A quién debo acudir para hacer un operativo de control frente a la escuela? Agradezco la respuesta.,consulta,ruido,C3
+"Hola, requerimos instalar más luminarias junto al mercado, gracias de antemano.",solicitud,alumbrado,S4
+"Hola, requerimos tapar el bache en mi barrio, gracias de antemano.",solicitud,vias,S4
+"Buenas tardes. Les informo que envenenaron a varios perros en la esquina de mi casa, esto es ilegal.",denuncia,animales,D4
+"Hola, excelente trabajo, gracias por poner los contenedores nuevos en la calle principal tan rápido.",agradecimiento,basura,A3
+Sugiero esterilizar a los perros callejeros en el pasaje para mejorar el sector. Saludos.,sugerencia,animales,G3
+"Buenos días. Excelente trabajo, gracias por vacunar a las mascotas atrás del centro de salud tan rápido. Sigan así.",agradecimiento,animales,A3
+"Como vecino del sector: requerimos cubrir la parada en la calle principal, gracias de antemano. Ya van meses esperando y nada.",solicitud,transporte,S4
+"Excelente trabajo, gracias por cambiar la tubería en la calle principal tan rápido.",agradecimiento,agua,A3
+Buenos días. Los vecinos estamos molestos porque el taller hace un ruido insoportable en la bajada al barrio.,queja,ruido,Q5
+Los vecinos estamos molestos porque las alarmas suenan toda la noche frente a la escuela. Es indignante.,queja,ruido,Q5
+Como vecino del sector: sugiero hacer campañas de adopción en la calle principal para mejorar el sector. Saludos.,sugerencia,animales,G3
+¿A quién debo acudir para cortar el césped frente a la iglesia? Agradezco la respuesta.,consulta,areas_verdes,C3
+"Les informo que botan escombros en la quebrada en el pasaje, esto es ilegal. Ya no se puede vivir así.",denuncia,basura,D4
+"Como vecino del sector: requerimos hacer un operativo de control cerca del parque, gracias de antemano. Saludos.",solicitud,ruido,S4
+Sugiero vacunar a las mascotas del barrio en la calle principal para mejorar el sector. Saludos.,sugerencia,animales,G3
+"Estimados: excelente trabajo, gracias por reparar el colector en la esquina de mi casa tan rápido. Sigan así.",agradecimiento,alcantarillado,A3
+Estimados: ¿A quién debo acudir para instalar más luminarias en el pasaje?,consulta,alumbrado,C3
+Buenos días. ¿A quién debo acudir para cubrir la parada frente a la escuela?,consulta,transporte,C3
+"Hola, los vecinos estamos molestos porque el bus tarda más de media hora frente a la iglesia. Los vecinos estamos cansados.",queja,transporte,Q5
+Estimados: sugiero controlar los locales nocturnos en la calle principal para mejorar el sector. Sería de gran ayuda.,sugerencia,ruido,G3
+Sugiero multar el ruido excesivo en la bajada al barrio para mejorar el sector. Saludos.,sugerencia,ruido,G3
+Sugiero poner horarios en las paradas por el redondel para mejorar el sector. Sería de gran ayuda.,sugerencia,transporte,G3
+"Estimados: excelente trabajo, gracias por limpiar las alcantarillas cerca del parque tan rápido. Sigan así.",agradecimiento,alcantarillado,A3
+Buenas tardes. Los vecinos estamos molestos porque el recolector no pasa en mi cuadra. Los vecinos estamos cansados.,queja,basura,Q5
+"Hola, excelente trabajo, gracias por crear la nueva ruta en la esquina de mi casa tan rápido. Muy agradecido.",agradecimiento,transporte,A3
+"Excelente trabajo, gracias por reparar los juegos en el pasaje tan rápido.",agradecimiento,areas_verdes,A3
+"Buenas tardes. Les informo que un camión deja desechos en la noche frente a la escuela, esto es ilegal. Tenemos miedo.",denuncia,basura,D4
+"Requerimos asfaltar la calle a media cuadra del UPC, gracias de antemano.",solicitud,vias,S4
+"Requerimos tapar el bache atrás del centro de salud, gracias de antemano.",solicitud,vias,S4
+"Buenas tardes. Requerimos revisar el desagüe en la bajada al barrio, gracias de antemano. Saludos.",solicitud,alcantarillado,S4
+"Como vecino del sector: excelente trabajo, gracias por enviar más patrullaje en la entrada del conjunto tan rápido. Felicitaciones al equipo.",agradecimiento,seguridad,A3
+"Estimados: les informo que roban celulares a los estudiantes frente a la iglesia, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+"Hola, excelente trabajo, gracias por arreglar el alumbrado junto al mercado tan rápido.",agradecimiento,alumbrado,A3
+"Buenos días. Les informo que venden droga en la esquina por el redondel, esto es ilegal. Por favor actúen.",denuncia,seguridad,D4
+Buenos días. ¿A quién debo acudir para poner un botón de pánico por el redondel?,consulta,seguridad,C3
+"Buenos días. Excelente trabajo, gracias por limpiar las alcantarillas en mi barrio tan rápido. Felicitaciones al equipo.",agradecimiento,alcantarillado,A3
+Sugiero hacer un huerto comunitario en la calle principal para mejorar el sector. Gracias.,sugerencia,areas_verdes,G3
+"Excelente trabajo, gracias por controlar el ruido en la esquina de mi casa tan rápido. Felicitaciones al equipo.",agradecimiento,ruido,A3
+Buenos días. ¿A quién debo acudir para revisar el permiso del local en mi cuadra?,consulta,ruido,C3
+"Estimados: les informo que venden droga en la esquina a media cuadra del UPC, esto es ilegal. Tenemos miedo.",denuncia,seguridad,D4
+"Buenos días. Excelente trabajo, gracias por vacunar a las mascotas frente a la iglesia tan rápido.",agradecimiento,animales,A3
+Los vecinos estamos molestos porque las lámparas no funcionan en el pasaje. Exigimos una solución urgente.,queja,alumbrado,Q5
+"Hola, excelente trabajo, gracias por cambiar las lámparas a media cuadra del UPC tan rápido. Felicitaciones al equipo.",agradecimiento,alumbrado,A3
+"Buenos días. Excelente trabajo, gracias por restablecer el servicio de agua atrás del centro de salud tan rápido. Sigan así.",agradecimiento,agua,A3
+"Requerimos dar mantenimiento al parque en mi barrio, gracias de antemano. Saludos.",solicitud,areas_verdes,S4
+Sugiero hacer canales para el agua lluvia frente a la escuela para mejorar el sector. Gracias.,sugerencia,alcantarillado,G3
+"Hola, los vecinos estamos molestos porque el recolector no pasa en mi barrio. Los vecinos estamos cansados.",queja,basura,Q5
+"Les informo que queman basura en el terreno baldío en la calle principal, esto es ilegal. Ya no se puede vivir así.",denuncia,basura,D4
+¿A quién debo acudir para poner una parada frente a la escuela? Gracias.,consulta,transporte,C3
+"Hola, ¿A quién debo acudir para revisar el permiso del local cerca del parque?",consulta,ruido,C3
+Como vecino del sector: sugiero vacunar a las mascotas del barrio en la entrada del conjunto para mejorar el sector. Estamos hartos de esperar.,sugerencia,animales,G3
+Buenos días. ¿A quién debo acudir para enviar patrullaje en la esquina de mi casa? Agradezco la respuesta.,consulta,seguridad,C3
+"Como vecino del sector: requerimos hacer un operativo de control en la esquina de mi casa, gracias de antemano. Quedo atento.",solicitud,ruido,S4
+Como vecino del sector: los vecinos estamos molestos porque la calle está completamente oscura en la esquina de mi casa. Los vecinos estamos cansados.,queja,alumbrado,Q5
+"Requerimos destapar el colector en la entrada del conjunto, gracias de antemano.",solicitud,alcantarillado,S4
+Buenas tardes. Los vecinos estamos molestos porque los buses pasan llenos en el pasaje.,queja,transporte,Q5
+Estimados: los vecinos estamos molestos porque la calle está destruida en la parada del bus.,queja,vias,Q5
+"Hola, sugiero señalizar el paso peatonal cerca del parque para mejorar el sector.",sugerencia,vias,G3
+"Requerimos restablecer el servicio de agua junto al mercado, gracias de antemano. Quedo atento.",solicitud,agua,S4
+"Requerimos destapar el colector en la esquina de mi casa, gracias de antemano.",solicitud,alcantarillado,S4
+"Buenas tardes. Excelente trabajo, gracias por poner los contenedores nuevos en la calle principal tan rápido. Felicitaciones al equipo.",agradecimiento,basura,A3
+"Les informo que un bar funciona sin permiso en mi barrio, esto es ilegal. Tenemos miedo.",denuncia,ruido,D4
+Como vecino del sector: ¿A quién debo acudir para recoger la basura acumulada en mi cuadra? Agradezco la respuesta.,consulta,basura,C3
+Buenas tardes. ¿A quién debo acudir para aumentar la frecuencia de buses junto al mercado? Agradezco la respuesta.,consulta,transporte,C3
+"Como vecino del sector: requerimos poner una parada frente a la iglesia, gracias de antemano.",solicitud,transporte,S4
+Sugiero poner máquinas de ejercicio atrás del centro de salud para mejorar el sector. Saludos.,sugerencia,areas_verdes,G3
+"Les informo que un camión deja desechos en la noche en la esquina de mi casa, esto es ilegal. Tenemos miedo.",denuncia,basura,D4
+"Como vecino del sector: requerimos limpiar las alcantarillas junto al mercado, gracias de antemano. Quedo atento.",solicitud,alcantarillado,S4
+¿A quién debo acudir para tapar el bache en el pasaje?,consulta,vias,C3
+¿A quién debo acudir para limpiar las alcantarillas en la esquina de mi casa? Es la tercera vez que lo pido.,consulta,alcantarillado,C3
+"Estimados: les informo que un local pone parlantes en la vereda frente a la escuela, esto es ilegal. Tenemos miedo.",denuncia,ruido,D4
+Estimados: sugiero formar una brigada barrial por el redondel para mejorar el sector.,sugerencia,seguridad,G3
+"Hola, ¿A quién debo acudir para revisar el permiso del local en la parada del bus?",consulta,ruido,C3
+Los vecinos estamos molestos porque el colector está roto en la calle principal.,queja,alcantarillado,Q5
+Los vecinos estamos molestos porque el recolector no pasa a media cuadra del UPC. Exigimos una solución urgente.,queja,basura,Q5
+"Estimados: excelente trabajo, gracias por remodelar el parque en mi cuadra tan rápido. Muy agradecido.",agradecimiento,areas_verdes,A3
+"Como vecino del sector: les informo que un bar funciona sin permiso por el redondel, esto es ilegal. Ya no se puede vivir así.",denuncia,ruido,D4
+"Les informo que abandonan cachorros en el parque en mi barrio, esto es ilegal. Ya no se puede vivir así.",denuncia,animales,D4
+Sugiero hacer una campaña de reciclaje en la esquina de mi casa para mejorar el sector.,sugerencia,basura,G3
+Los vecinos estamos molestos porque la vereda está rota en mi cuadra. Los vecinos estamos cansados.,queja,vias,Q5
+"Como vecino del sector: requerimos aumentar la frecuencia de buses en la parada del bus, gracias de antemano. Quedo atento.",solicitud,transporte,S4
+"Estimados: excelente trabajo, gracias por arreglar el bache frente a la iglesia tan rápido.",agradecimiento,vias,A3
+"Estimados: requerimos tapar el bache frente a la iglesia, gracias de antemano. Gracias.",solicitud,vias,S4
+Buenos días. Sugiero instalar luces solares frente a la iglesia para mejorar el sector.,sugerencia,alumbrado,G3
+¿A quién debo acudir para hacer un operativo de control en la entrada del conjunto? Saludos.,consulta,ruido,C3
+"Estimados: excelente trabajo, gracias por limpiar el botadero en la calle principal tan rápido. Sigan así.",agradecimiento,basura,A3
+Como vecino del sector: sugiero poner horarios en las paradas en mi barrio para mejorar el sector. Gracias.,sugerencia,transporte,G3
+"Excelente trabajo, gracias por instalar las nuevas luminarias en la entrada del conjunto tan rápido.",agradecimiento,alumbrado,A3
+"Requerimos reparar los juegos frente a la escuela, gracias de antemano.",solicitud,areas_verdes,S4
+Los vecinos estamos molestos porque la presión del agua es muy baja en la esquina de mi casa.,queja,agua,Q5
+"Les informo que hay fiestas clandestinas hasta la madrugada cerca del parque, esto es ilegal. Por favor actúen.",denuncia,ruido,D4
+Como vecino del sector: sugiero ampliar la vereda en la parada del bus para mejorar el sector. Gracias.,sugerencia,vias,G3
+"Requerimos hacer un operativo de control junto al mercado, gracias de antemano. Nadie nos hace caso.",solicitud,ruido,S4
+Estimados: ¿A quién debo acudir para restablecer el servicio de agua en la parada del bus? Saludos.,consulta,agua,C3
+"Requerimos poner un contenedor en la parada del bus, gracias de antemano.",solicitud,basura,S4
+¿A quién debo acudir para enviar patrullaje en mi barrio? Gracias.,consulta,seguridad,C3
+"Excelente trabajo, gracias por reparar la vereda por el redondel tan rápido. Sigan así.",agradecimiento,vias,A3
+Como vecino del sector: ¿A quién debo acudir para revisar el desagüe en la entrada del conjunto?,consulta,alcantarillado,C3
+"Les informo que roban celulares a los estudiantes a media cuadra del UPC, esto es ilegal.",denuncia,seguridad,D4
+"Hola, requerimos tapar el bache atrás del centro de salud, gracias de antemano. Ya van meses esperando y nada.",solicitud,vias,S4
+"Hola, sugiero señalizar el paso peatonal en el pasaje para mejorar el sector. Sería de gran ayuda.",sugerencia,vias,G3
+"Estimados: les informo que maltratan a un perro en una casa a media cuadra del UPC, esto es ilegal.",denuncia,animales,D4
+"Buenos días. Les informo que botan escombros en la quebrada atrás del centro de salud, esto es ilegal.",denuncia,basura,D4
+Como vecino del sector: los vecinos estamos molestos porque se inunda todo cuando llueve en la calle principal.,queja,alcantarillado,Q5
+Estimados: los vecinos estamos molestos porque hay una fuga de agua frente a la escuela. Es indignante.,queja,agua,Q5
+Estimados: sugiero crear una ruta nueva junto al mercado para mejorar el sector. Gracias.,sugerencia,transporte,G3
+"Buenas tardes. Excelente trabajo, gracias por reparar la vereda por el redondel tan rápido. Sigan así.",agradecimiento,vias,A3
+"Hola, requerimos cambiar el horario del recolector frente a la iglesia, gracias de antemano. Saludos.",solicitud,basura,S4
+"Hola, requerimos cubrir la parada en mi barrio, gracias de antemano.",solicitud,transporte,S4
+"Hola, requerimos dar mantenimiento al parque cerca del parque, gracias de antemano. Ya van meses esperando y nada.",solicitud,areas_verdes,S4
+Buenas tardes. Sugiero poner reductores de velocidad en la calle principal para mejorar el sector.,sugerencia,vias,G3
+"Excelente trabajo, gracias por sembrar los árboles atrás del centro de salud tan rápido.",agradecimiento,areas_verdes,A3
+Como vecino del sector: los vecinos estamos molestos porque la calle está destruida junto al mercado. Exigimos una solución urgente.,queja,vias,Q5
+Los vecinos estamos molestos porque no tenemos agua en mi barrio.,queja,agua,Q5
+"Les informo que envenenaron a varios perros en la esquina de mi casa, esto es ilegal.",denuncia,animales,D4
+"Estimados: les informo que venden droga en la esquina en la bajada al barrio, esto es ilegal. Por favor actúen.",denuncia,seguridad,D4
+Estimados: ¿A quién debo acudir para reparar la vereda en la calle principal? Saludos.,consulta,vias,C3
+Buenos días. Los vecinos estamos molestos porque se inunda todo cuando llueve en la entrada del conjunto.,queja,alcantarillado,Q5
+Estimados: los vecinos estamos molestos porque da miedo caminar de noche atrás del centro de salud. Es indignante.,queja,seguridad,Q5
+"Como vecino del sector: excelente trabajo, gracias por remodelar el parque en la esquina de mi casa tan rápido.",agradecimiento,areas_verdes,A3
+"Como vecino del sector: les informo que botan escombros en la quebrada frente a la escuela, esto es ilegal.",denuncia,basura,D4
+"Les informo que botan escombros en la quebrada en la esquina de mi casa, esto es ilegal. Tenemos miedo.",denuncia,basura,D4
+"Requerimos cambiar el horario del recolector en la calle principal, gracias de antemano. Saludos.",solicitud,basura,S4
+"Buenas tardes. Les informo que abandonan cachorros en el parque en mi cuadra, esto es ilegal.",denuncia,animales,D4
+"Excelente trabajo, gracias por arreglar la fuga frente a la escuela tan rápido. Muy agradecido.",agradecimiento,agua,A3
+Buenos días. Sugiero ampliar la vereda a media cuadra del UPC para mejorar el sector.,sugerencia,vias,G3
+"Buenas tardes. Les informo que abandonan cachorros en el parque cerca del parque, esto es ilegal.",denuncia,animales,D4
+"Hola, los vecinos estamos molestos porque no tenemos agua cerca del parque.",queja,agua,Q5
+"Hola, excelente trabajo, gracias por hacer el operativo en la bajada al barrio tan rápido.",agradecimiento,ruido,A3
+"Hola, requerimos hacer un operativo de control frente a la escuela, gracias de antemano.",solicitud,ruido,S4
+"Hola, excelente trabajo, gracias por instalar las nuevas luminarias en la parada del bus tan rápido.",agradecimiento,alumbrado,A3
+"Buenas tardes. Requerimos hacer una campaña de esterilización frente a la escuela, gracias de antemano. Ya van meses esperando y nada.",solicitud,animales,S4
+Buenas tardes. Sugiero hacer canales para el agua lluvia frente a la iglesia para mejorar el sector. Saludos.,sugerencia,alcantarillado,G3
+"Les informo que roban celulares a los estudiantes atrás del centro de salud, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+Como vecino del sector: los vecinos estamos molestos porque los buses no paran en la parada del bus. Es indignante.,queja,transporte,Q5
+"Buenos días. Les informo que asaltan a la gente en la parada frente a la escuela, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+"Estimados: les informo que abandonan cachorros en el parque frente a la iglesia, esto es ilegal.",denuncia,animales,D4
+"Buenos días. Les informo que un bar funciona sin permiso en el pasaje, esto es ilegal.",denuncia,ruido,D4
+"Excelente trabajo, gracias por limpiar el botadero frente a la escuela tan rápido.",agradecimiento,basura,A3
+"Como vecino del sector: les informo que un local pone parlantes en la vereda en la bajada al barrio, esto es ilegal. Tenemos miedo.",denuncia,ruido,D4
+Sugiero poner luminarias LED frente a la escuela para mejorar el sector. Estamos hartos de esperar.,sugerencia,alumbrado,G3
+"Buenos días. Requerimos cambiar la lámpara del poste junto al mercado, gracias de antemano. Es la tercera vez que lo pido.",solicitud,alumbrado,S4
+Estimados: ¿A quién debo acudir para poner un botón de pánico cerca del parque? Ya van meses esperando y nada.,consulta,seguridad,C3
+"Buenas tardes. Les informo que rompen los vidrios de los carros atrás del centro de salud, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+Sugiero poner más cámaras cerca del parque para mejorar el sector.,sugerencia,seguridad,G3
+Buenos días. Sugiero colocar más basureros a media cuadra del UPC para mejorar el sector.,sugerencia,basura,G3
+"Requerimos recoger a los perros abandonados atrás del centro de salud, gracias de antemano. Nadie nos hace caso.",solicitud,animales,S4
+Los vecinos estamos molestos porque los buses pasan llenos por el redondel.,queja,transporte,Q5
+"Requerimos arreglar la fuga en el pasaje, gracias de antemano. Saludos.",solicitud,agua,S4
+Buenas tardes. ¿A quién debo acudir para controlar el ruido frente a la iglesia? Ya van meses esperando y nada.,consulta,ruido,C3
+Estimados: ¿A quién debo acudir para dar mantenimiento al parque en la calle principal? Ya van meses esperando y nada.,consulta,areas_verdes,C3
+¿A quién debo acudir para recoger a los perros abandonados a media cuadra del UPC? Saludos.,consulta,animales,C3
+"Hola, excelente trabajo, gracias por atender nuestro llamado atrás del centro de salud tan rápido.",agradecimiento,seguridad,A3
+"Buenas tardes. Excelente trabajo, gracias por sembrar los árboles en la esquina de mi casa tan rápido. Muy agradecido.",agradecimiento,areas_verdes,A3
+"Les informo que envenenaron a varios perros frente a la iglesia, esto es ilegal.",denuncia,animales,D4
+"Hola, ¿A quién debo acudir para hacer un operativo de control cerca del parque? Estamos hartos de esperar.",consulta,ruido,C3
+"Buenas tardes. Requerimos revisar la presión del agua en mi cuadra, gracias de antemano. Quedo atento.",solicitud,agua,S4
+"Les informo que hay fiestas clandestinas hasta la madrugada por el redondel, esto es ilegal. Por favor actúen.",denuncia,ruido,D4
+¿A quién debo acudir para controlar el ruido en mi barrio? Saludos.,consulta,ruido,C3
+Estimados: ¿A quién debo acudir para cambiar el horario del recolector en la bajada al barrio?,consulta,basura,C3
+Buenos días. Los vecinos estamos molestos porque la basura se acumula en la vereda frente a la escuela. Es indignante.,queja,basura,Q5
+"Buenas tardes. Excelente trabajo, gracias por reparar la vereda en mi barrio tan rápido.",agradecimiento,vias,A3
+Los vecinos estamos molestos porque la presión del agua es muy baja en la parada del bus. Exigimos una solución urgente.,queja,agua,Q5
+"Hola, sugiero poner reductores de velocidad en el pasaje para mejorar el sector. Ya van meses esperando y nada.",sugerencia,vias,G3
+¿A quién debo acudir para cambiar el horario del recolector frente a la escuela? Agradezco la respuesta.,consulta,basura,C3
+Los vecinos estamos molestos porque hay una fuga de agua cerca del parque.,queja,agua,Q5
+"Requerimos instalar más luminarias en el pasaje, gracias de antemano.",solicitud,alumbrado,S4
+"Como vecino del sector: excelente trabajo, gracias por restablecer el servicio de agua en la bajada al barrio tan rápido. Felicitaciones al equipo.",agradecimiento,agua,A3
+"Buenas tardes. Requerimos hacer un operativo de control en la entrada del conjunto, gracias de antemano.",solicitud,ruido,S4
+Buenos días. ¿A quién debo acudir para arreglar la fuga en mi cuadra? Agradezco la respuesta.,consulta,agua,C3
+¿A quién debo acudir para tapar el bache a media cuadra del UPC? Saludos.,consulta,vias,C3
+"Excelente trabajo, gracias por atender nuestro llamado a media cuadra del UPC tan rápido.",agradecimiento,seguridad,A3
+"Hola, sugiero sembrar más árboles en el pasaje para mejorar el sector.",sugerencia,areas_verdes,G3
+"Como vecino del sector: les informo que abandonan cachorros en el parque por el redondel, esto es ilegal. Ya no se puede vivir así.",denuncia,animales,D4
+Como vecino del sector: sugiero señalizar el paso peatonal a media cuadra del UPC para mejorar el sector. Sería de gran ayuda.,sugerencia,vias,G3
+"Buenas tardes. Requerimos revisar el permiso del local en la bajada al barrio, gracias de antemano. Saludos.",solicitud,ruido,S4
+Los vecinos estamos molestos porque el taller hace un ruido insoportable en mi barrio.,queja,ruido,Q5
+"Excelente trabajo, gracias por poner los contenedores nuevos frente a la escuela tan rápido. Felicitaciones al equipo.",agradecimiento,basura,A3
+Estimados: sugiero hacer campañas de adopción en la esquina de mi casa para mejorar el sector. Es la tercera vez que lo pido.,sugerencia,animales,G3
+Como vecino del sector: los vecinos estamos molestos porque hay una fuga de agua a media cuadra del UPC. Los vecinos estamos cansados.,queja,agua,Q5
+"Excelente trabajo, gracias por cambiar la tubería cerca del parque tan rápido.",agradecimiento,agua,A3
+"Excelente trabajo, gracias por clausurar el local ruidoso junto al mercado tan rápido. Sigan así.",agradecimiento,ruido,A3
+Buenas tardes. Los vecinos estamos molestos porque los contenedores están desbordados en la parada del bus. Es indignante.,queja,basura,Q5
+"Buenos días. Excelente trabajo, gracias por vacunar a las mascotas en el pasaje tan rápido. Sigan así.",agradecimiento,animales,A3
+Como vecino del sector: los vecinos estamos molestos porque el taller hace un ruido insoportable por el redondel. Es indignante.,queja,ruido,Q5
+Estimados: ¿A quién debo acudir para destapar el colector en mi cuadra?,consulta,alcantarillado,C3
+"Como vecino del sector: excelente trabajo, gracias por asfaltar la calle en la bajada al barrio tan rápido.",agradecimiento,vias,A3
+Buenas tardes. ¿A quién debo acudir para revisar la presión del agua por el redondel?,consulta,agua,C3
+¿A quién debo acudir para revisar la presión del agua frente a la escuela?,consulta,agua,C3
+"Buenas tardes. Excelente trabajo, gracias por arreglar el alumbrado en la esquina de mi casa tan rápido. Felicitaciones al equipo.",agradecimiento,alumbrado,A3
+Buenas tardes. ¿A quién debo acudir para restablecer el servicio de agua en el pasaje? Gracias.,consulta,agua,C3
+"Hola, excelente trabajo, gracias por restablecer el servicio de agua en el pasaje tan rápido.",agradecimiento,agua,A3
+"Buenos días. Excelente trabajo, gracias por arreglar la fuga en la parada del bus tan rápido. Felicitaciones al equipo.",agradecimiento,agua,A3
+Los vecinos estamos molestos porque el colector está roto en el pasaje. Los vecinos estamos cansados.,queja,alcantarillado,Q5
+"Les informo que roban celulares a los estudiantes cerca del parque, esto es ilegal.",denuncia,seguridad,D4
+"Hola, sugiero vacunar a las mascotas del barrio atrás del centro de salud para mejorar el sector.",sugerencia,animales,G3
+"Les informo que rompen los vidrios de los carros frente a la iglesia, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+Sugiero ampliar la vereda frente a la escuela para mejorar el sector.,sugerencia,vias,G3
+"Buenos días. Excelente trabajo, gracias por controlar el ruido cerca del parque tan rápido.",agradecimiento,ruido,A3
+"Buenas tardes. Requerimos controlar el ruido junto al mercado, gracias de antemano. Quedo atento.",solicitud,ruido,S4
+"Buenas tardes. Excelente trabajo, gracias por controlar el ruido en mi cuadra tan rápido. Sigan así.",agradecimiento,ruido,A3
+"Requerimos asfaltar la calle frente a la iglesia, gracias de antemano. Saludos.",solicitud,vias,S4
+"Estimados: les informo que asaltan a la gente en la parada frente a la iglesia, esto es ilegal.",denuncia,seguridad,D4
+Como vecino del sector: ¿A quién debo acudir para enviar patrullaje en mi barrio? Agradezco la respuesta.,consulta,seguridad,C3
+"Estimados: les informo que botan escombros en la quebrada en mi barrio, esto es ilegal.",denuncia,basura,D4
+"Requerimos cortar el césped en mi barrio, gracias de antemano. Gracias.",solicitud,areas_verdes,S4
+Como vecino del sector: ¿A quién debo acudir para reparar los juegos frente a la escuela? Saludos.,consulta,areas_verdes,C3
+¿A quién debo acudir para arreglar la fuga a media cuadra del UPC?,consulta,agua,C3
+"Hola, sugiero colocar más basureros frente a la iglesia para mejorar el sector. Es la tercera vez que lo pido.",sugerencia,basura,G3
+¿A quién debo acudir para poner un botón de pánico en la bajada al barrio? Agradezco la respuesta.,consulta,seguridad,C3
+Como vecino del sector: sugiero instalar medidores nuevos en la esquina de mi casa para mejorar el sector. Sería de gran ayuda.,sugerencia,agua,G3
+Los vecinos estamos molestos porque la presión del agua es muy baja junto al mercado.,queja,agua,Q5
+Los vecinos estamos molestos porque los juegos infantiles están rotos frente a la iglesia. Los vecinos estamos cansados.,queja,areas_verdes,Q5
+"Requerimos poner un contenedor en la bajada al barrio, gracias de antemano. Saludos.",solicitud,basura,S4
+"Requerimos cubrir la parada en la esquina de mi casa, gracias de antemano.",solicitud,transporte,S4
+"Requerimos revisar el alumbrado en la entrada del conjunto, gracias de antemano. Quedo atento.",solicitud,alumbrado,S4
+"Buenas tardes. Excelente trabajo, gracias por rescatar a los perritos en la parada del bus tan rápido. Felicitaciones al equipo.",agradecimiento,animales,A3
+Estimados: sugiero poner contenedores de reciclaje frente a la escuela para mejorar el sector. Nadie nos hace caso.,sugerencia,basura,G3
+"Hola, los vecinos estamos molestos porque el área verde está llena de basura en la calle principal. Es indignante.",queja,areas_verdes,Q5
+Los vecinos estamos molestos porque la basura se acumula en la vereda en la parada del bus. Los vecinos estamos cansados.,queja,basura,Q5
+Como vecino del sector: ¿A quién debo acudir para retirar el animal muerto atrás del centro de salud? Gracias.,consulta,animales,C3
+¿A quién debo acudir para poner una parada en la calle principal? Gracias.,consulta,transporte,C3
+¿A quién debo acudir para retirar el animal muerto frente a la escuela?,consulta,animales,C3
+"Excelente trabajo, gracias por poner la nueva parada a media cuadra del UPC tan rápido.",agradecimiento,transporte,A3
+"Como vecino del sector: excelente trabajo, gracias por atender nuestro llamado en la calle principal tan rápido.",agradecimiento,seguridad,A3
+"Excelente trabajo, gracias por reparar la vereda en la calle principal tan rápido. Felicitaciones al equipo.",agradecimiento,vias,A3
+Los vecinos estamos molestos porque la presión del agua es muy baja frente a la iglesia. Es indignante.,queja,agua,Q5
+"Hola, requerimos cortar el césped junto al mercado, gracias de antemano.",solicitud,areas_verdes,S4
+Los vecinos estamos molestos porque el agua llega turbia a media cuadra del UPC.,queja,agua,Q5
+Buenos días. Sugiero vacunar a las mascotas del barrio a media cuadra del UPC para mejorar el sector.,sugerencia,animales,G3
+Buenos días. ¿A quién debo acudir para poner una parada en la parada del bus? Saludos.,consulta,transporte,C3
+Buenos días. ¿A quién debo acudir para recoger a los perros abandonados junto al mercado?,consulta,animales,C3
+Buenas tardes. Sugiero poner horarios en las paradas en la parada del bus para mejorar el sector.,sugerencia,transporte,G3
+"Requerimos cambiar el horario del recolector en la esquina de mi casa, gracias de antemano.",solicitud,basura,S4
+"Buenos días. Requerimos cortar el césped en la entrada del conjunto, gracias de antemano. Estamos hartos de esperar.",solicitud,areas_verdes,S4
+¿A quién debo acudir para cambiar la lámpara del poste frente a la escuela? Gracias.,consulta,alumbrado,C3
+Buenos días. Sugiero instalar alarmas comunitarias en la esquina de mi casa para mejorar el sector. Estamos hartos de esperar.,sugerencia,seguridad,G3
+Buenos días. Sugiero cambiar las tuberías viejas en la entrada del conjunto para mejorar el sector.,sugerencia,agua,G3
+Estimados: sugiero poner contenedores de reciclaje cerca del parque para mejorar el sector. Gracias.,sugerencia,basura,G3
+"Buenos días. Excelente trabajo, gracias por arreglar el alumbrado en la entrada del conjunto tan rápido.",agradecimiento,alumbrado,A3
+"Buenas tardes. Les informo que envenenaron a varios perros frente a la iglesia, esto es ilegal. Ya no se puede vivir así.",denuncia,animales,D4
+"Requerimos instalar una cámara de vigilancia frente a la escuela, gracias de antemano. Quedo atento.",solicitud,seguridad,S4
+"Buenas tardes. Excelente trabajo, gracias por reparar la vereda junto al mercado tan rápido. Muy agradecido.",agradecimiento,vias,A3
+Sugiero instalar alarmas comunitarias por el redondel para mejorar el sector. Sería de gran ayuda.,sugerencia,seguridad,G3
+"Estimados: requerimos poner un contenedor cerca del parque, gracias de antemano.",solicitud,basura,S4
+Estimados: sugiero cambiar las tuberías viejas en la bajada al barrio para mejorar el sector. Sería de gran ayuda.,sugerencia,agua,G3
+"Buenos días. Les informo que un local pone parlantes en la vereda en la entrada del conjunto, esto es ilegal.",denuncia,ruido,D4
+Como vecino del sector: los vecinos estamos molestos porque los buses pasan llenos en mi cuadra.,queja,transporte,Q5
+Estimados: sugiero instalar alarmas comunitarias en la entrada del conjunto para mejorar el sector. Gracias.,sugerencia,seguridad,G3
+"Hola, sugiero hacer un huerto comunitario en el pasaje para mejorar el sector. Gracias.",sugerencia,areas_verdes,G3
+Buenos días. Sugiero iluminar mejor el pasaje frente a la iglesia para mejorar el sector.,sugerencia,alumbrado,G3
+"Estimados: excelente trabajo, gracias por remodelar el parque en mi barrio tan rápido.",agradecimiento,areas_verdes,A3
+Sugiero hacer canales para el agua lluvia en la esquina de mi casa para mejorar el sector.,sugerencia,alcantarillado,G3
+Como vecino del sector: sugiero poner horarios en las paradas en mi cuadra para mejorar el sector. Sería de gran ayuda.,sugerencia,transporte,G3
+"Excelente trabajo, gracias por rescatar a los perritos en la esquina de mi casa tan rápido.",agradecimiento,animales,A3
+Buenas tardes. ¿A quién debo acudir para cortar el césped junto al mercado?,consulta,areas_verdes,C3
+"Estimados: excelente trabajo, gracias por enviar más patrullaje junto al mercado tan rápido. Sigan así.",agradecimiento,seguridad,A3
+Estimados: ¿A quién debo acudir para destapar el colector en el pasaje? Gracias.,consulta,alcantarillado,C3
+"Les informo que abandonan cachorros en el parque junto al mercado, esto es ilegal. Ya no se puede vivir así.",denuncia,animales,D4
+"Como vecino del sector: les informo que rompen los vidrios de los carros en la parada del bus, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+¿A quién debo acudir para poner un contenedor por el redondel? Ya van meses esperando y nada.,consulta,basura,C3
+"Como vecino del sector: les informo que un bar funciona sin permiso por el redondel, esto es ilegal.",denuncia,ruido,D4
+"Hola, los vecinos estamos molestos porque la alcantarilla está tapada a media cuadra del UPC. Los vecinos estamos cansados.",queja,alcantarillado,Q5
+"Buenas tardes. Requerimos revisar el desagüe en mi cuadra, gracias de antemano.",solicitud,alcantarillado,S4
+"Como vecino del sector: les informo que hay fiestas clandestinas hasta la madrugada en mi barrio, esto es ilegal.",denuncia,ruido,D4
+"Hola, excelente trabajo, gracias por cambiar las lámparas atrás del centro de salud tan rápido. Sigan así.",agradecimiento,alumbrado,A3
+"Les informo que hay fiestas clandestinas hasta la madrugada en la parada del bus, esto es ilegal. Tenemos miedo.",denuncia,ruido,D4
+Como vecino del sector: los vecinos estamos molestos porque el recolector no pasa en la parada del bus. Los vecinos estamos cansados.,queja,basura,Q5
+Como vecino del sector: los vecinos estamos molestos porque el colector está roto en la esquina de mi casa.,queja,alcantarillado,Q5
+"Hola, les informo que botan escombros en la quebrada frente a la escuela, esto es ilegal. Ya no se puede vivir así.",denuncia,basura,D4
+Sugiero hacer campañas de adopción en mi barrio para mejorar el sector. Es la tercera vez que lo pido.,sugerencia,animales,G3
+"Estimados: requerimos destapar el colector en la bajada al barrio, gracias de antemano. Quedo atento.",solicitud,alcantarillado,S4
+"Hola, sugiero ampliar la vereda por el redondel para mejorar el sector.",sugerencia,vias,G3
+Buenas tardes. Sugiero hacer un huerto comunitario junto al mercado para mejorar el sector.,sugerencia,areas_verdes,G3
+"Como vecino del sector: requerimos cambiar la lámpara del poste en la calle principal, gracias de antemano. Saludos.",solicitud,alumbrado,S4
+"Buenos días. Excelente trabajo, gracias por limpiar el botadero en la parada del bus tan rápido. Felicitaciones al equipo.",agradecimiento,basura,A3
+"Hola, ¿A quién debo acudir para recoger a los perros abandonados en mi barrio?",consulta,animales,C3
+"Hola, sugiero sembrar más árboles junto al mercado para mejorar el sector. Gracias.",sugerencia,areas_verdes,G3
+"Como vecino del sector: requerimos cortar el césped en la bajada al barrio, gracias de antemano.",solicitud,areas_verdes,S4
+"Les informo que un camión deja desechos en la noche a media cuadra del UPC, esto es ilegal.",denuncia,basura,D4
+"Les informo que asaltan a la gente en la parada por el redondel, esto es ilegal. Tenemos miedo.",denuncia,seguridad,D4
+"Hola, requerimos destapar el colector en la bajada al barrio, gracias de antemano. Saludos.",solicitud,alcantarillado,S4
+"Como vecino del sector: les informo que queman basura en el terreno baldío en la esquina de mi casa, esto es ilegal.",denuncia,basura,D4
+Los vecinos estamos molestos porque el colector está roto frente a la escuela. Los vecinos estamos cansados.,queja,alcantarillado,Q5
+"Hola, excelente trabajo, gracias por poner los contenedores nuevos en el pasaje tan rápido.",agradecimiento,basura,A3
+Sugiero colocar más basureros en mi cuadra para mejorar el sector. Gracias.,sugerencia,basura,G3
+"Les informo que maltratan a un perro en una casa en el pasaje, esto es ilegal. Por favor actúen.",denuncia,animales,D4
+"Buenas tardes. Les informo que maltratan a un perro en una casa en la parada del bus, esto es ilegal. Por favor actúen.",denuncia,animales,D4
+"Hola, les informo que hay fiestas clandestinas hasta la madrugada en mi barrio, esto es ilegal. Por favor actúen.",denuncia,ruido,D4
+Estimados: ¿A quién debo acudir para recoger la basura acumulada en la calle principal?,consulta,basura,C3
+Como vecino del sector: los vecinos estamos molestos porque el adoquinado está levantado en la esquina de mi casa. Exigimos una solución urgente.,queja,vias,Q5
+"Les informo que asaltan a la gente en la parada en la entrada del conjunto, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+Buenos días. Los vecinos estamos molestos porque los buses pasan llenos en la esquina de mi casa. Exigimos una solución urgente.,queja,transporte,Q5
+¿A quién debo acudir para cortar el césped frente a la iglesia?,consulta,areas_verdes,C3
+"Excelente trabajo, gracias por arreglar el alumbrado por el redondel tan rápido. Sigan así.",agradecimiento,alumbrado,A3
+Los vecinos estamos molestos porque la zona es muy insegura en mi cuadra. Es indignante.,queja,seguridad,Q5
+"Hola, les informo que asaltan a la gente en la parada frente a la iglesia, esto es ilegal. Ya no se puede vivir así.",denuncia,seguridad,D4
+Buenas tardes. Los vecinos estamos molestos porque hay fundas de basura regadas atrás del centro de salud.,queja,basura,Q5
+"Hola, ¿A quién debo acudir para revisar el permiso del local en la entrada del conjunto? Nadie nos hace caso.",consulta,ruido,C3
+Los vecinos estamos molestos porque el taller hace un ruido insoportable en el pasaje.,queja,ruido,Q5
+Buenos días. Sugiero señalizar el paso peatonal en mi cuadra para mejorar el sector. Sería de gran ayuda.,sugerencia,vias,G3
+Como vecino del sector: sugiero instalar medidores nuevos en la entrada del conjunto para mejorar el sector. Ya van meses esperando y nada.,sugerencia,agua,G3
+"Como vecino del sector: les informo que abandonan cachorros en el parque frente a la escuela, esto es ilegal. Ya no se puede vivir así.",denuncia,animales,D4
+"Hola, los vecinos estamos molestos porque da miedo caminar de noche junto al mercado. Es indignante.",queja,seguridad,Q5
+"Les informo que un bar funciona sin permiso atrás del centro de salud, esto es ilegal. Por favor actúen.",denuncia,ruido,D4
+Buenas tardes. Los vecinos estamos molestos porque el agua llega turbia en mi barrio. Los vecinos estamos cansados.,queja,agua,Q5
+"Excelente trabajo, gracias por poner la nueva parada frente a la escuela tan rápido.",agradecimiento,transporte,A3
+"Les informo que abandonan cachorros en el parque en la esquina de mi casa, esto es ilegal. Ya no se puede vivir así.",denuncia,animales,D4
+Los vecinos estamos molestos porque el parque está abandonado en la calle principal. Los vecinos estamos cansados.,queja,areas_verdes,Q5
+Buenas tardes. ¿A quién debo acudir para revisar la presión del agua en la entrada del conjunto? Agradezco la respuesta.,consulta,agua,C3
+"Buenas tardes. Les informo que abandonan cachorros en el parque en la esquina de mi casa, esto es ilegal.",denuncia,animales,D4
+"Hola, requerimos hacer un operativo de control en la esquina de mi casa, gracias de antemano. Quedo atento.",solicitud,ruido,S4
+"Hola, los vecinos estamos molestos porque el agua llega turbia en mi barrio. Es indignante.",queja,agua,Q5
+Estimados: sugiero poner reductores de velocidad por el redondel para mejorar el sector. Sería de gran ayuda.,sugerencia,vias,G3
+"Hola, sugiero hacer campañas de adopción en el pasaje para mejorar el sector.",sugerencia,animales,G3
+Buenas tardes. Sugiero formar una brigada barrial en la entrada del conjunto para mejorar el sector.,sugerencia,seguridad,G3
+"Hola, les informo que un camión deja desechos en la noche cerca del parque, esto es ilegal. Por favor actúen.",denuncia,basura,D4
+Los vecinos estamos molestos porque da miedo caminar de noche en la entrada del conjunto. Es indignante.,queja,seguridad,Q5
+"Excelente trabajo, gracias por restablecer el servicio de agua en la calle principal tan rápido. Sigan así.",agradecimiento,agua,A3
+"Hola, excelente trabajo, gracias por arreglar el bache en la parada del bus tan rápido. Felicitaciones al equipo.",agradecimiento,vias,A3
+"Requerimos poner una parada en mi cuadra, gracias de antemano. Saludos.",solicitud,transporte,S4
+Estimados: sugiero multar el ruido excesivo en mi cuadra para mejorar el sector. Sería de gran ayuda.,sugerencia,ruido,G3
+Estimados: sugiero hacer canales para el agua lluvia en la calle principal para mejorar el sector.,sugerencia,alcantarillado,G3
+"Requerimos cubrir la parada atrás del centro de salud, gracias de antemano.",solicitud,transporte,S4
+"Les informo que botan escombros en la quebrada atrás del centro de salud, esto es ilegal. Por favor actúen.",denuncia,basura,D4
+"Estimados: les informo que asaltan a la gente en la parada en la esquina de mi casa, esto es ilegal.",denuncia,seguridad,D4
+"Estimados: les informo que hay fiestas clandestinas hasta la madrugada en mi cuadra, esto es ilegal. Tenemos miedo.",denuncia,ruido,D4
+"Como vecino del sector: requerimos reparar los juegos a media cuadra del UPC, gracias de antemano. Ya van meses esperando y nada.",solicitud,areas_verdes,S4
+Buenos días. Sugiero hacer una campaña de reciclaje en mi barrio para mejorar el sector. Saludos.,sugerencia,basura,G3
+"Buenas tardes. Excelente trabajo, gracias por limpiar las alcantarillas en el pasaje tan rápido. Felicitaciones al equipo.",agradecimiento,alcantarillado,A3
+"Hola, ¿A quién debo acudir para revisar el alumbrado junto al mercado?",consulta,alumbrado,C3
+Buenas tardes. Los vecinos estamos molestos porque se inunda todo cuando llueve frente a la escuela. Exigimos una solución urgente.,queja,alcantarillado,Q5
+Buenos días. ¿A quién debo acudir para tapar el bache frente a la iglesia? Saludos.,consulta,vias,C3
+"Hola, ¿A quién debo acudir para revisar la presión del agua en la bajada al barrio?",consulta,agua,C3
+"Excelente trabajo, gracias por arreglar la fuga frente a la escuela tan rápido. Felicitaciones al equipo.",agradecimiento,agua,A3
+"Hola, ¿A quién debo acudir para poner un contenedor cerca del parque? Gracias.",consulta,basura,C3
+"Estimados: excelente trabajo, gracias por limpiar las alcantarillas cerca del parque tan rápido. Felicitaciones al equipo.",agradecimiento,alcantarillado,A3
+"Como vecino del sector: excelente trabajo, gracias por vacunar a las mascotas en el pasaje tan rápido.",agradecimiento,animales,A3
+"Estimados: les informo que un camión deja desechos en la noche cerca del parque, esto es ilegal. Por favor actúen.",denuncia,basura,D4
+"Buenos días. Requerimos dar mantenimiento al parque en la entrada del conjunto, gracias de antemano. Saludos.",solicitud,areas_verdes,S4
+Los vecinos estamos molestos porque el recolector no pasa en el pasaje.,queja,basura,Q5
+Como vecino del sector: ¿A quién debo acudir para revisar el desagüe en la bajada al barrio?,consulta,alcantarillado,C3
+"Les informo que un local pone parlantes en la vereda en el pasaje, esto es ilegal. Por favor actúen.",denuncia,ruido,D4
+"Buenas tardes. Les informo que venden droga en la esquina en la esquina de mi casa, esto es ilegal. Tenemos miedo.",denuncia,seguridad,D4
+Los vecinos estamos molestos porque la calle está destruida en el pasaje. Es indignante.,queja,vias,Q5
+"Buenos días. Excelente trabajo, gracias por instalar las nuevas luminarias por el redondel tan rápido. Muy agradecido.",agradecimiento,alumbrado,A3
+"Buenos días. Requerimos instalar más luminarias en la bajada al barrio, gracias de antemano. Quedo atento.",solicitud,alumbrado,S4
+Sugiero poner luminarias LED a media cuadra del UPC para mejorar el sector. Gracias.,sugerencia,alumbrado,G3
+Buenas tardes. ¿A quién debo acudir para revisar el alumbrado a media cuadra del UPC? Es la tercera vez que lo pido.,consulta,alumbrado,C3
+"Les informo que abandonan cachorros en el parque a media cuadra del UPC, esto es ilegal.",denuncia,animales,D4
+Los vecinos estamos molestos porque la parada no tiene cubierta en mi cuadra.,queja,transporte,Q5
+"Requerimos recoger a los perros abandonados en mi barrio, gracias de antemano. Saludos.",solicitud,animales,S4
+"Hola, excelente trabajo, gracias por arreglar el alumbrado en el pasaje tan rápido. Muy agradecido.",agradecimiento,alumbrado,A3
+"Requerimos instalar más luminarias a media cuadra del UPC, gracias de antemano.",solicitud,alumbrado,S4
+"Les informo que botan escombros en la quebrada en mi cuadra, esto es ilegal. Tenemos miedo.",denuncia,basura,D4
+Buenas tardes. Sugiero colocar más basureros en la parada del bus para mejorar el sector. Sería de gran ayuda.,sugerencia,basura,G3
+Buenas tardes. Los vecinos estamos molestos porque no hay patrullaje junto al mercado. Es indignante.,queja,seguridad,Q5
+"Buenas tardes. Requerimos tapar el bache en el pasaje, gracias de antemano.",solicitud,vias,S4
+"Buenos días. Excelente trabajo, gracias por clausurar el local ruidoso a media cuadra del UPC tan rápido. Muy agradecido.",agradecimiento,ruido,A3
+Buenas tardes. Los vecinos estamos molestos porque los buses no paran frente a la escuela.,queja,transporte,Q5
+"Buenos días. Les informo que un camión deja desechos en la noche frente a la escuela, esto es ilegal. Tenemos miedo.",denuncia,basura,D4
+"Como vecino del sector: requerimos asfaltar la calle atrás del centro de salud, gracias de antemano. Estamos hartos de esperar.",solicitud,vias,S4
+Buenas tardes. Los vecinos estamos molestos porque no tenemos agua en la esquina de mi casa. Exigimos una solución urgente.,queja,agua,Q5
+Como vecino del sector: los vecinos estamos molestos porque el taller hace un ruido insoportable en la esquina de mi casa. Los vecinos estamos cansados.,queja,ruido,Q5
+Estimados: sugiero poner más cámaras en la esquina de mi casa para mejorar el sector. Sería de gran ayuda.,sugerencia,seguridad,G3
+Como vecino del sector: ¿A quién debo acudir para cambiar el horario del recolector cerca del parque? Agradezco la respuesta.,consulta,basura,C3
+"Buenos días. Requerimos instalar una cámara de vigilancia en el pasaje, gracias de antemano. Quedo atento.",solicitud,seguridad,S4
+Buenos días. Sugiero avisar con tiempo los cortes de agua en la parada del bus para mejorar el sector. Sería de gran ayuda.,sugerencia,agua,G3
+"Requerimos destapar el colector atrás del centro de salud, gracias de antemano. Saludos.",solicitud,alcantarillado,S4
+"Buenos días. Requerimos poner un contenedor a media cuadra del UPC, gracias de antemano.",solicitud,basura,S4
+Buenos días. Sugiero poner máquinas de ejercicio en la bajada al barrio para mejorar el sector. Saludos.,sugerencia,areas_verdes,G3
+Estimados: sugiero sembrar más árboles en mi barrio para mejorar el sector. Saludos.,sugerencia,areas_verdes,G3
+"Como vecino del sector: excelente trabajo, gracias por limpiar las alcantarillas en la bajada al barrio tan rápido. Muy agradecido.",agradecimiento,alcantarillado,A3
+Buenas tardes. Sugiero crear una ruta nueva en la entrada del conjunto para mejorar el sector. Es la tercera vez que lo pido.,sugerencia,transporte,G3
+Buenos días. Los vecinos estamos molestos porque la zona es muy insegura por el redondel. Exigimos una solución urgente.,queja,seguridad,Q5
+Estimados: los vecinos estamos molestos porque no tenemos agua en la esquina de mi casa. Es indignante.,queja,agua,Q5
+Como vecino del sector: ¿A quién debo acudir para reparar los juegos en la esquina de mi casa? Nadie nos hace caso.,consulta,areas_verdes,C3
+Los vecinos estamos molestos porque el agua llega turbia en la parada del bus.,queja,agua,Q5
+Como vecino del sector: sugiero poner contenedores de reciclaje atrás del centro de salud para mejorar el sector. Saludos.,sugerencia,basura,G3
+"Hola, les informo que un bar funciona sin permiso en la bajada al barrio, esto es ilegal. Por favor actúen.",denuncia,ruido,D4
+Buenas tardes. ¿A quién debo acudir para enviar patrullaje en la entrada del conjunto?,consulta,seguridad,C3
+¿A quién debo acudir para revisar el alumbrado atrás del centro de salud? Agradezco la respuesta.,consulta,alumbrado,C3
+Buenos días. Los vecinos estamos molestos porque la alcantarilla está tapada junto al mercado. Los vecinos estamos cansados.,queja,alcantarillado,Q5
+Como vecino del sector: sugiero limpiar las rejillas antes de las lluvias en la parada del bus para mejorar el sector.,sugerencia,alcantarillado,G3
+Sugiero poner horarios para la música en la esquina de mi casa para mejorar el sector. Saludos.,sugerencia,ruido,G3
+Los vecinos estamos molestos porque el taller hace un ruido insoportable cerca del parque.,queja,ruido,Q5
+"Les informo que queman basura en el terreno baldío en la calle principal, esto es ilegal.",denuncia,basura,D4
+"Requerimos poner una parada junto al mercado, gracias de antemano. Nadie nos hace caso.",solicitud,transporte,S4
+Estimados: los vecinos estamos molestos porque la luminaria parpadea toda la noche en la bajada al barrio. Es indignante.,queja,alumbrado,Q5
+¿A quién debo acudir para recoger la basura acumulada atrás del centro de salud? Saludos.,consulta,basura,C3
+¿A quién debo acudir para recoger la basura acumulada en la bajada al barrio? Gracias.,consulta,basura,C3
+"Excelente trabajo, gracias por aumentar la frecuencia de buses en la calle principal tan rápido. Sigan así.",agradecimiento,transporte,A3
+"Estimados: excelente trabajo, gracias por hacer el operativo junto al mercado tan rápido. Felicitaciones al equipo.",agradecimiento,ruido,A3
+¿A quién debo acudir para revisar el permiso del local en la calle principal? Agradezco la respuesta.,consulta,ruido,C3
+Buenas tardes. ¿A quién debo acudir para reparar la vereda frente a la iglesia?,consulta,vias,C3
+Como vecino del sector: ¿A quién debo acudir para asfaltar la calle en la parada del bus? Gracias.,consulta,vias,C3
+Estimados: los vecinos estamos molestos porque la zona es muy insegura frente a la iglesia. Los vecinos estamos cansados.,queja,seguridad,Q5
+Sugiero poner reductores de velocidad en la bajada al barrio para mejorar el sector. Gracias.,sugerencia,vias,G3
+"Requerimos cambiar la lámpara del poste cerca del parque, gracias de antemano. Gracias.",solicitud,alumbrado,S4
+"Estimados: requerimos reparar la vereda en el pasaje, gracias de antemano. Gracias.",solicitud,vias,S4
+Como vecino del sector: sugiero colocar más basureros junto al mercado para mejorar el sector. Saludos.,sugerencia,basura,G3
+"Hola, excelente trabajo, gracias por arreglar el alumbrado frente a la iglesia tan rápido.",agradecimiento,alumbrado,A3
+"Buenas tardes. Les informo que maltratan a un perro en una casa por el redondel, esto es ilegal. Tenemos miedo.",denuncia,animales,D4
+"Como vecino del sector: les informo que envenenaron a varios perros en la calle principal, esto es ilegal. Por favor actúen.",denuncia,animales,D4
+"Hola, les informo que envenenaron a varios perros atrás del centro de salud, esto es ilegal. Por favor actúen.",denuncia,animales,D4
+Como vecino del sector: sugiero poner contenedores de reciclaje en la esquina de mi casa para mejorar el sector. Saludos.,sugerencia,basura,G3
+"Buenos días. Requerimos controlar el ruido en mi barrio, gracias de antemano. Quedo atento.",solicitud,ruido,S4
+Como vecino del sector: los vecinos estamos molestos porque el agua llega turbia en el pasaje. Exigimos una solución urgente.,queja,agua,Q5
+"Como vecino del sector: excelente trabajo, gracias por cambiar las lámparas en mi barrio tan rápido. Felicitaciones al equipo.",agradecimiento,alumbrado,A3
+Buenos días. ¿A quién debo acudir para controlar el ruido atrás del centro de salud? Agradezco la respuesta.,consulta,ruido,C3
+"Requerimos enviar patrullaje a media cuadra del UPC, gracias de antemano.",solicitud,seguridad,S4
+Sugiero cambiar las tuberías viejas junto al mercado para mejorar el sector. Gracias.,sugerencia,agua,G3
+Los vecinos estamos molestos porque el recolector no pasa en la parada del bus.,queja,basura,Q5
+"Requerimos limpiar las alcantarillas en la esquina de mi casa, gracias de antemano. Quedo atento.",solicitud,alcantarillado,S4
+"Excelente trabajo, gracias por cambiar la tubería junto al mercado tan rápido. Sigan así.",agradecimiento,agua,A3
+Como vecino del sector: los vecinos estamos molestos porque el poste de luz está quemado cerca del parque. Es indignante.,queja,alumbrado,Q5
+"Les informo que abandonan cachorros en el parque por el redondel, esto es ilegal. Ya no se puede vivir así.",denuncia,animales,D4
+Buenas tardes. Los vecinos estamos molestos porque la parada no tiene cubierta en la parada del bus.,queja,transporte,Q5
+"Excelente trabajo, gracias por destapar el desagüe por el redondel tan rápido.",agradecimiento,alcantarillado,A3
+"Estimados: les informo que envenenaron a varios perros frente a la iglesia, esto es ilegal. Ya no se puede vivir así.",denuncia,animales,D4
+"Excelente trabajo, gracias por reparar los juegos en la esquina de mi casa tan rápido.",agradecimiento,areas_verdes,A3
+Sugiero iluminar mejor el pasaje en la bajada al barrio para mejorar el sector. Gracias.,sugerencia,alumbrado,G3
+"Hola, sugiero poner máquinas de ejercicio en la esquina de mi casa para mejorar el sector. Es la tercera vez que lo pido.",sugerencia,areas_verdes,G3
+"Excelente trabajo, gracias por instalar las nuevas luminarias frente a la iglesia tan rápido. Sigan así.",agradecimiento,alumbrado,A3
+Estimados: sugiero ampliar la vereda en la entrada del conjunto para mejorar el sector.,sugerencia,vias,G3
+"Como vecino del sector: excelente trabajo, gracias por arreglar el bache en la bajada al barrio tan rápido.",agradecimiento,vias,A3
+"Estimados: requerimos reparar los juegos en la esquina de mi casa, gracias de antemano. Saludos.",solicitud,areas_verdes,S4
+"Hola, los vecinos estamos molestos porque las alarmas suenan toda la noche por el redondel. Los vecinos estamos cansados.",queja,ruido,Q5
+"Buenos días. Excelente trabajo, gracias por restablecer el servicio de agua en mi barrio tan rápido. Felicitaciones al equipo.",agradecimiento,agua,A3
+"Hola, les informo que botan escombros en la quebrada junto al mercado, esto es ilegal.",denuncia,basura,D4
+Buenos días. ¿A quién debo acudir para poner una parada en el pasaje? Gracias.,consulta,transporte,C3
+Los vecinos estamos molestos porque la basura se acumula en la vereda en el pasaje. Los vecinos estamos cansados.,queja,basura,Q5
+Como vecino del sector: ¿A quién debo acudir para destapar el colector atrás del centro de salud?,consulta,alcantarillado,C3
+"Estimados: requerimos dar mantenimiento al parque en mi barrio, gracias de antemano. Gracias.",solicitud,areas_verdes,S4
+"Hola, ¿A quién debo acudir para recoger la basura acumulada a media cuadra del UPC?",consulta,basura,C3
+"Requerimos poner un contenedor cerca del parque, gracias de antemano.",solicitud,basura,S4
+"Les informo que roban celulares a los estudiantes junto al mercado, esto es ilegal.",denuncia,seguridad,D4
+Como vecino del sector: ¿A quién debo acudir para poner un contenedor en la entrada del conjunto?,consulta,basura,C3
+Como vecino del sector: los vecinos estamos molestos porque no hay patrullaje en la esquina de mi casa.,queja,seguridad,Q5
+Estimados: los vecinos estamos molestos porque hay un bache enorme atrás del centro de salud. Los vecinos estamos cansados.,queja,vias,Q5
+"Hola, los vecinos estamos molestos porque da miedo caminar de noche junto al mercado.",queja,seguridad,Q5
+"Como vecino del sector: excelente trabajo, gracias por poner los contenedores nuevos en la calle principal tan rápido. Muy agradecido.",agradecimiento,basura,A3
+"Buenas tardes. Les informo que rompen los vidrios de los carros cerca del parque, esto es ilegal. Tenemos miedo.",denuncia,seguridad,D4
+Los vecinos estamos molestos porque la zona es muy insegura a media cuadra del UPC.,queja,seguridad,Q5

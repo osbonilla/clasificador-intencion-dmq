@@ -1,0 +1,11 @@
+# Credenciales
+.env
+
+# Entornos y cachés
+venv/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Salidas generadas (modelo, .dlpk de ~400 MB, figuras)
+salidas/
