@@ -22,6 +22,7 @@ Maestría en Ciencia de Datos · Módulo: Analítica Avanzada
 ![arcgis.learn](https://img.shields.io/badge/ArcGIS%20API%20for%20Python-arcgis.learn-1F6FB2?logo=arcgis&logoColor=white)
 
 BERT en español ajustado para leer el texto de un reporte ciudadano de Quito y decir **qué pide** quien lo escribió: `queja`, `denuncia`, `solicitud`, `consulta`, `sugerencia` o `agradecimiento`. El modelo se evalúa sobre una capa real de **ArcGIS Online** (formulario Survey123 con 1 500 reportes en las 65 parroquias del DMQ) y se despliega en **ArcGIS** como paquete de deep learning (`.dlpk`).
+
 ---
 
 ## Contenido
