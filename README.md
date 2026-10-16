@@ -1,5 +1,5 @@
    <p align="center">
-     <img src="imgs/proyecto.png" alt="Clasificación de la intención en reportes ciudadanos del DMQ" width="900">
+     <img src="imgs/proyecto.jpg" alt="Clasificación de la intención en reportes ciudadanos del DMQ" width="900">
    </p>
 
 # Clasificación de la intención en reportes ciudadanos con BERT
