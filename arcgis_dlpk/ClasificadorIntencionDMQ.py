@@ -20,9 +20,25 @@ Solo usa torch y transformers, que vienen con las librerías de deep learning
 de ArcGIS Pro (Deep Learning Libraries Installer).
 """
 import json
+import os
+import tempfile
+import traceback
+from datetime import datetime
 from pathlib import Path
 
+import pandas as pd
 import torch
+
+# Registro de diagnóstico: %TEMP%\dmq_debug.txt
+LOG = os.path.join(tempfile.gettempdir(), "dmq_debug.txt")
+
+
+def log(msg):
+    try:
+        with open(LOG, "a", encoding="utf-8") as f:
+            f.write(f"[{datetime.now():%H:%M:%S}] {msg}\n")
+    except Exception:
+        pass
 from transformers import AutoModelForSequenceClassification, PreTrainedTokenizerFast
 
 try:
@@ -43,15 +59,30 @@ class ClasificadorIntencionDMQ:
         self.device = "cpu"
         self.max_length = 128
         self.batch_size = 8
+        self.output_field = "ClassLabel"
 
     # ── Ciclo de vida que define ArcGIS ────────────────────
     def initialize(self, **kwargs):
         """Carga el modelo. kwargs['model'] es la ruta al archivo .emd."""
+        log(f"initialize kwargs={ {k: str(v) for k, v in kwargs.items()} }")
+        try:
+            self._initialize(**kwargs)
+            log(f"modelo cargado en {self.device}")
+        except Exception:
+            log("ERROR en initialize:\n" + traceback.format_exc())
+            raise
+
+    def _initialize(self, **kwargs):
         emd = Path(kwargs["model"])
         info = json.loads(emd.read_text(encoding="utf-8"))
         carpeta_modelo = emd.parent / info["ModelFile"]   # ruta relativa al .emd
 
         self.max_length = int(info.get("MaxLength", self.max_length))
+        # La herramienta de ArcGIS Pro busca la clase en el campo OutputField del .emd
+        # En minúsculas: la herramienta une el resultado a la tabla y luego hace
+        # AlterField(tabla, OutputField.lower(), ...); si el campo no está en minúsculas
+        # falla con ERROR 000728 "Field classlabel does not exist within table".
+        self.output_field = info.get("OutputField", self.output_field).lower()
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         # PreTrainedTokenizerFast lee tokenizer.json directamente: funciona igual si el modelo se
         # guardó con transformers 5.x y ArcGIS Pro trae transformers 4.x
@@ -72,25 +103,52 @@ class ClasificadorIntencionDMQ:
 
     def getConfiguration(self, **kwargs):
         """Recibe los valores elegidos por el usuario antes de predecir."""
+        log(f"getConfiguration kwargs={ {k: str(v) for k, v in kwargs.items()} }")
         self.max_length = int(kwargs.get("max_length") or self.max_length)
         self.batch_size = int(kwargs.get("batch_size") or self.batch_size)
         kwargs["batch_size"] = self.batch_size
         return kwargs
 
     def predict(self, feature_set, **kwargs):
-        """Clasifica el campo de texto indicado y devuelve un FeatureSet con la clase."""
-        campo = kwargs["input_field"]
-        textos = feature_set.df[campo].fillna("").astype(str).tolist()
-        clases = [clase for clase, _ in self.clasificar(textos)]
+        """Clasifica el campo de texto indicado y devuelve un FeatureSet con dos campos:
+        OutputField del .emd en minúsculas (classlabel) con la intención, y confianza.
 
+        La herramienta (Pro 3.7) une estos campos a la tabla con JoinField y luego renombra
+        classlabel al nombre que el usuario puso en Class Label Field. Ese nombre debe ser
+        distinto de classlabel/ClassLabel (p. ej. Intencion): al final la herramienta borra
+        el campo classlabel, y si se llaman igual se borra el resultado."""
+        try:
+            df = feature_set.df
+            primera = not getattr(self, "_ya_registrado", False)
+            self._ya_registrado = True
+            if primera:
+                log(f"predict kwargs={ {k: str(v) for k, v in kwargs.items()} } "
+                    f"columnas={list(df.columns)} filas={len(df)}")
+            campo = kwargs.get("input_field")
+            if campo not in df.columns:
+                # respaldo: input_str o la primera columna de texto
+                campo = "input_str" if "input_str" in df.columns else \
+                    next(c for c in df.columns if df[c].dtype == object)
+            textos = ["" if pd.isna(t) else str(t) for t in df[campo].tolist()]
+            preds = [(c, round(p, 4)) if t.strip() else ("", None)
+                     for (c, p), t in zip(self.clasificar(textos), textos)]
+        except Exception:
+            log("ERROR en predict:\n" + traceback.format_exc())
+            raise
+
+        # La herramienta une TODOS los campos devueltos a la tabla (por OBJECTID, en orden),
+        # así que no se devuelve input_str: solo quedaría como una copia del texto.
         feature_dict = {
             "fields": [
-                {"name": "input_str", "type": "esriFieldTypeString"},
-                {"name": "class", "type": "esriFieldTypeString"},
+                {"name": self.output_field, "type": "esriFieldTypeString"},
+                {"name": "confianza", "type": "esriFieldTypeDouble"},
             ],
             "geometryType": "",
-            "features": [{"attributes": {"input_str": t, "class": c}} for t, c in zip(textos, clases)],
+            "features": [{"attributes": {self.output_field: c, "confianza": p}} for c, p in preds],
         }
+        if primera:
+            log(f"predict devuelve campos={[f['name'] for f in feature_dict['fields']]} "
+                f"ejemplo={feature_dict['features'][:1]}")
         return FeatureSet.from_dict(feature_dict) if FeatureSet else feature_dict
 
     # ── Inferencia ─────────────────────────────────────────
