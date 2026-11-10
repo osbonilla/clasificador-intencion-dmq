@@ -4,8 +4,6 @@
 
 # Clasificación de intención en reportes ciudadanos con BERT (Clasificador de texto)
 
-**Universidad San Francisco de Quito** · Colegio de Posgrado<br>
-Maestría en Ciencia de Datos · Módulo: Analítica Avanzada
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-CUDA%2012.8-EE4C2C?logo=pytorch&logoColor=white)
